@@ -10316,3 +10316,110 @@ java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "metho
 2023-06-03 20:37:25 [Thread-403] INFO  : HikariPool-101 - Shutdown completed.
 2023-06-03 20:37:25 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 31424 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
 2023-06-03 20:37:25 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-03 20:37:25 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-03 20:37:25 [restartedMain] INFO  : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2023-06-03 20:37:25 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-03 20:37:25 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-03 20:37:25 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-03 20:37:25 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-03 20:37:25 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 317 ms
+2023-06-03 20:37:25 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-03 20:37:25 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-03 20:37:25 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-03 20:37:25 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-03 20:37:25 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-03 20:37:25 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-03 20:37:25 [restartedMain] INFO  : HikariPool-102 - Starting...
+2023-06-03 20:37:25 [restartedMain] INFO  : HikariPool-102 - Added connection org.postgresql.jdbc.PgConnection@6847f65a
+2023-06-03 20:37:25 [restartedMain] INFO  : HikariPool-102 - Start completed.
+2023-06-03 20:37:25 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-03 20:37:25 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-03 20:37:25 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-03 20:37:25 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-03 20:37:25 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-03 20:37:25 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-03 20:37:25 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-03 20:37:25 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 20:37:25 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-03 20:37:25 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-03 20:37:25 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-03 20:37:25 [restartedMain] INFO  : Started ServiceApplication in 0.742 seconds (process running for 5638.601)
+2023-06-03 20:37:25 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-03 20:37:26 [http-nio-1707-exec-2] WARN  : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in org.springframework.http.ResponseEntity<com.service.service.Util.response.ResponseUtils> com.service.service.controller.masterdata.UserController.update(com.service.service.dto.masterdata.UserDTO) with 5 errors: [Field error in object 'userDTO' on field 'password': rejected value [null]; codes [NotEmpty.userDTO.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.password,password]; arguments []; default message [password]]; default message [password must be field]] [Field error in object 'userDTO' on field 'email': rejected value [asd]; codes [Email.userDTO.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@ab5d998,.*]; default message [Is not email]] [Field error in object 'userDTO' on field 'name_m_user': rejected value [null]; codes [NotEmpty.userDTO.name_m_user,NotEmpty.name_m_user,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.name_m_user,name_m_user]; arguments []; default message [name_m_user]]; default message [name_m_user must be field]] [Field error in object 'userDTO' on field 'username': rejected value [Sya]; codes [Min.userDTO.username,Min.username,Min.java.lang.String,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username],7]; default message [Min username 7 Character]] [Field error in object 'userDTO' on field 'username': rejected value [Sya]; codes [Max.userDTO.username,Max.username,Max.java.lang.String,Max]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username],100]; default message [Max username 100 Character]] ]
+2023-06-03 20:37:40 [http-nio-1707-exec-4] WARN  : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in org.springframework.http.ResponseEntity<com.service.service.Util.response.ResponseUtils> com.service.service.controller.masterdata.UserController.update(com.service.service.dto.masterdata.UserDTO) with 4 errors: [Field error in object 'userDTO' on field 'password': rejected value [null]; codes [NotEmpty.userDTO.password,NotEmpty.password,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.password,password]; arguments []; default message [password]]; default message [password must be field]] [Field error in object 'userDTO' on field 'name_m_user': rejected value [null]; codes [NotEmpty.userDTO.name_m_user,NotEmpty.name_m_user,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.name_m_user,name_m_user]; arguments []; default message [name_m_user]]; default message [name_m_user must be field]] [Field error in object 'userDTO' on field 'email': rejected value [asd]; codes [Email.userDTO.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@ab5d998,.*]; default message [Is not email]] [Field error in object 'userDTO' on field 'username': rejected value [null]; codes [NotEmpty.userDTO.username,NotEmpty.username,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDTO.username,username]; arguments []; default message [username]]; default message [username must be field]] ]
+2023-06-03 20:41:28 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-03 20:41:28 [Thread-407] INFO  : Stopping service [Tomcat]
+2023-06-03 20:41:28 [Thread-407] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 20:41:28 [Thread-407] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-03 20:41:28 [Thread-407] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-03 20:41:28 [Thread-407] INFO  : HikariPool-102 - Shutdown initiated...
+2023-06-03 20:41:28 [Thread-407] INFO  : HikariPool-102 - Shutdown completed.
+2023-06-03 20:41:28 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 31424 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-03 20:41:28 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-03 20:41:28 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-03 20:41:28 [restartedMain] INFO  : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-06-03 20:41:28 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-03 20:41:28 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-03 20:41:28 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-03 20:41:28 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-03 20:41:28 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 310 ms
+2023-06-03 20:41:28 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-03 20:41:28 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-03 20:41:28 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-03 20:41:28 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-03 20:41:28 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-03 20:41:28 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-03 20:41:28 [restartedMain] INFO  : HikariPool-103 - Starting...
+2023-06-03 20:41:28 [restartedMain] INFO  : HikariPool-103 - Added connection org.postgresql.jdbc.PgConnection@3d9742c3
+2023-06-03 20:41:28 [restartedMain] INFO  : HikariPool-103 - Start completed.
+2023-06-03 20:41:28 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-03 20:41:28 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-03 20:41:28 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-03 20:41:28 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-03 20:41:28 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-03 20:41:29 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-03 20:41:29 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-03 20:41:29 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 20:41:29 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-03 20:41:29 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-03 20:41:29 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-03 20:41:29 [restartedMain] INFO  : Started ServiceApplication in 0.695 seconds (process running for 5881.933)
+2023-06-03 20:41:29 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-03 20:41:32 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-03 20:41:32 [Thread-411] INFO  : Stopping service [Tomcat]
+2023-06-03 20:41:32 [Thread-411] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-03 20:41:32 [Thread-411] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-03 20:41:32 [Thread-411] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-03 20:41:32 [Thread-411] INFO  : HikariPool-103 - Shutdown initiated...
+2023-06-03 20:41:32 [Thread-411] INFO  : HikariPool-103 - Shutdown completed.
+2023-06-03 20:41:32 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 31424 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-03 20:41:32 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-03 20:41:32 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-03 20:41:32 [restartedMain] INFO  : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2023-06-03 20:41:32 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-03 20:41:32 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-03 20:41:32 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-03 20:41:33 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-03 20:41:33 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 305 ms
+2023-06-03 20:41:33 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-03 20:41:33 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-03 20:41:33 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-03 20:41:33 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-03 20:41:33 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-03 20:41:33 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-03 20:41:33 [restartedMain] INFO  : HikariPool-104 - Starting...
+2023-06-03 20:41:33 [restartedMain] INFO  : HikariPool-104 - Added connection org.postgresql.jdbc.PgConnection@72845396
+2023-06-03 20:41:33 [restartedMain] INFO  : HikariPool-104 - Start completed.
+2023-06-03 20:41:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-03 20:41:33 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-03 20:41:33 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-03 20:41:33 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-03 20:41:33 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-03 20:41:33 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-03 20:41:33 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-03 20:41:33 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-03 20:41:33 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-03 20:41:33 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-03 20:41:33 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-03 20:41:33 [restartedMain] INFO  : Started ServiceApplication in 0.69 seconds (process running for 5886.161)
+2023-06-03 20:41:33 [restartedMain] INFO  : Condition evaluation unchanged
