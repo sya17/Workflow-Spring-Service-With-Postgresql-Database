@@ -1,4 +1,4 @@
-package com.service.service.entity.masterdata;
+package com.service.service.entity.masterdata.workflow;
 
 import java.util.Date;
 
@@ -6,40 +6,45 @@ import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
+import com.service.service.entity.masterdata.UserEntity;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Setter // Untuk Set Paramater
 @Getter // Untuk Get Paramater
 @Data // Untuk Memberikan Identitas Data yang mengakses ke Database
 @Entity // Untuk Memberikan Identitas Data yang mengakses ke Database
-@Table(name = "m_user")
-public class UserEntity {
-    
+@Table(name = "m_workflow_group")
+public class WorkflowGroupEntity {
+
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(name = "sys_id_m_user", updatable = false, nullable = false)
+    @Column(name = "sys_id_m_workflow_group", updatable = false, nullable = false)
     private String id;
 
-    @Column(name = "name_m_user", nullable = true, length = 100)
-    private String nameMUser;
+    @Column(name = "name_m_workflow_group", nullable = true, length = 100)
+    private String nameWorkflowGroup;
 
-    @Column(name = "username", nullable = true, length = 100)
-    private String username;
+    @Column(name = "description", nullable = true, columnDefinition = "TEXT")
+    private String description;
 
-    @Column(name = "password", nullable = true, length = 100)
-    private String password;
+    @ManyToOne
+    @JoinColumn(name = "created_by")
+    private UserEntity createdBy;
 
-    @Column(name = "email", nullable = true)
-    private String email;
+    @ManyToOne
+    @JoinColumn(name = "updated_by")
+    private UserEntity updatedBy;
 
     @CreatedDate
     @Column(name = "created")
@@ -51,4 +56,5 @@ public class UserEntity {
 
     @Column(name = "active", nullable = true, length = 1)
     private String active;
+
 }
