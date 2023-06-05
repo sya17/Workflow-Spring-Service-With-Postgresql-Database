@@ -10,6 +10,11 @@ public class WorkflowGroupDTO {
 
     @NotEmpty(message = "name_workflow_group must be field")
     private String name_workflow_group;
+
+    @NotEmpty(message = "tabel_name must be field")
+    private String tabel_name;
+
     private String description;
+
     private String active;
 }

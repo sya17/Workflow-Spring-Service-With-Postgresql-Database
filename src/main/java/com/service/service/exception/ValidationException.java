@@ -1,5 +1,6 @@
 package com.service.service.exception;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -7,8 +8,10 @@ import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -50,7 +53,26 @@ public class ValidationException {
                                 null,
                                 path,
                                 null,
-                                "Terjadi Kesalahan",
+                                "There is an Error",
                                 listError));
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<ResponseUtils> handleMissingServletRequestParameterException(
+            HttpMessageNotReadableException ex, HttpServletRequest request) throws IOException {
+
+        System.out.println("<<<<< " + ex.getLocalizedMessage());
+        System.out.println("<<<<< " + ex.getMessage());
+        System.out.println("<<<<< " + ex.getHttpInputMessage().getBody().toString());
+        String path = request.getRequestURI().replaceFirst("/", "");
+        String errorMessage = "Required request body is missing.";
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body(
+                        CommonUtil.getInstance().setGeneralResponse(
+                                null,
+                                path,
+                                null,
+                                "There is an Error", errorMessage));
     }
 }

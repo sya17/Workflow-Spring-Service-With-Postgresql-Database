@@ -66,7 +66,7 @@ public class CommonUtil {
             String path,
             String method,
             String msg,
-            List<ErrorResponse> errMsg) {
+            Object errMsg) {
         ResponseUtils resUtils = new ResponseUtils();
         resUtils.setService("/" + path);
         if (!isNullOrEmpty(method)) {
@@ -83,14 +83,18 @@ public class CommonUtil {
                 case ResponRequestConstant.MethodConstant.DELETE:
                     resUtils.setMessage("Delete Successfully");
                     break;
+                case ResponRequestConstant.MethodConstant.ERROR:
+                    resUtils.setMessage("There is an Error");
+                    break;
                 default:
+                    resUtils.setMessage("There is an Error");
                     break;
             }
         }
         if (!isNullOrEmpty(msg)) {
             resUtils.setMessage(msg);
         }
-        if (errMsg != null && errMsg.size() > 0) {
+        if (errMsg != null) {
             resUtils.setErr_message(errMsg);
         }
 

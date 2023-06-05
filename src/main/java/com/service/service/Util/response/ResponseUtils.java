@@ -22,7 +22,8 @@ public class ResponseUtils<T> {
 
     private String service;
     private String message;
-    private List<ErrorResponse> err_message;
+    private Object err_message;
+    // private List<ErrorResponse> err_message;
     private Pagination page;
     private T data;
 }
