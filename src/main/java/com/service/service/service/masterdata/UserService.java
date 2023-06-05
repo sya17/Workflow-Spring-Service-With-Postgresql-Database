@@ -6,41 +6,49 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.service.service.Util.CommonUtil;
 import com.service.service.entity.masterdata.UserEntity;
 import com.service.service.repository.masterdata.UserRepository;
 
 @Service
-public class UserService {
+public class UserService extends CommonUtil {
 
     @Autowired
-    UserRepository uRepository;
+    UserRepository repository;
 
     public UserEntity save(UserEntity userModel) {
-        return uRepository.save(userModel);
+        return repository.save(userModel);
     }
 
-    public UserEntity update(String id, UserEntity userModel) {
-        Optional<UserEntity> user = getById(id);
-        return (!user.isEmpty() ? uRepository.save(userModel) : null);
+    public UserEntity update(String id, UserEntity entity) {
+        UserEntity entityB4 = getById(id);
+        mergeEntity(entity, entityB4);
+        return (entity != null && entityB4 != null ? repository.save(entityB4) : null);
     }
 
-    public Optional<UserEntity> getById(String id) {
-        return uRepository.findById(id);
+    public UserEntity getById(String id) {
+        // return repository.getById(id);
+        Optional<UserEntity> entity = getByIdOpt(id);
+        return !entity.isPresent() ? null : entity.get();
+    }
+
+    public Optional<UserEntity> getByIdOpt(String id) {
+        return repository.findById(id);
     }
 
     public List<UserEntity> getAll() {
-        return uRepository.findAll();
+        return repository.findAll();
     }
 
     public boolean deleteById(String id) {
-        Optional<UserEntity> user = getById(id);
-        if(!user.isEmpty()){
-            uRepository.deleteById(id);
+        Optional<UserEntity> user = getByIdOpt(id);
+        if (!user.isEmpty()) {
+            repository.deleteById(id);
         }
         return !user.isEmpty();
     }
 
     public void deleteAll() {
-        uRepository.deleteAll();
+        repository.deleteAll();
     }
 }

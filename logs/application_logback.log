@@ -1,1 +1,1847 @@
 2023-06-05 01:56:34 [HikariPool-4 housekeeper] WARN  : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=2h32m54s220ms154µs500ns).
+2023-06-05 08:42:53 [HikariPool-4 housekeeper] WARN  : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=6h35m52s284ms414µs700ns).
+2023-06-05 10:51:19 [HikariPool-4 housekeeper] WARN  : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=4m54s464ms81µs).
+2023-06-05 13:09:49 [HikariPool-4 housekeeper] WARN  : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1h31m29s574ms822µs500ns).
+2023-06-05 14:05:23 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 14:05:23 [Thread-15] INFO  : Stopping service [Tomcat]
+2023-06-05 14:05:23 [Thread-15] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 14:05:23 [Thread-15] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 14:05:24 [Thread-15] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 14:05:24 [Thread-15] INFO  : HikariPool-4 - Shutdown initiated...
+2023-06-05 14:05:24 [Thread-15] INFO  : HikariPool-4 - Shutdown completed.
+2023-06-05 14:05:24 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 14:05:24 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 14:05:25 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 14:05:25 [restartedMain] INFO  : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2023-06-05 14:05:25 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 14:05:25 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 14:05:26 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 14:05:26 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 14:05:26 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1346 ms
+2023-06-05 14:05:26 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 14:05:26 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 14:05:26 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 14:05:26 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 14:05:26 [restartedMain] ERROR : Failed to initialize JPA EntityManagerFactory: Entity 'com.service.service.entity.masterdata.workflow.workflowcondition.WorkflowGroupCondition' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-06-05 14:05:26 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.service.service.entity.masterdata.workflow.workflowcondition.WorkflowGroupCondition' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2023-06-05 14:05:26 [restartedMain] INFO  : Stopping service [Tomcat]
+2023-06-05 14:05:26 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-05 14:05:26 [restartedMain] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'com.service.service.entity.masterdata.workflow.workflowcondition.WorkflowGroupCondition' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Entity 'com.service.service.entity.masterdata.workflow.workflowcondition.WorkflowGroupCondition' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:293)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:228)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:417)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:255)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:275)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:318)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 19 common frames omitted
+2023-06-05 19:33:18 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:33:18 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:33:18 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:33:18 [restartedMain] INFO  : Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:33:18 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:33:18 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:33:18 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:33:18 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:33:18 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 862 ms
+2023-06-05 19:33:19 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:33:19 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:33:19 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:33:19 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:33:19 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:33:19 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:33:19 [restartedMain] INFO  : HikariPool-5 - Starting...
+2023-06-05 19:33:19 [restartedMain] INFO  : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@338b747d
+2023-06-05 19:33:19 [restartedMain] INFO  : HikariPool-5 - Start completed.
+2023-06-05 19:33:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:33:19 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:33:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:33:19 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:33:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:33:19 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:33:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:33:19 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:33:19 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:33:19 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:33:19 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:33:20 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:33:20 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:33:20 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:33:20 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:33:20 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:33:20 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:33:20 [restartedMain] INFO  : Started ServiceApplication in 2.279 seconds (process running for 72907.316)
+2023-06-05 19:33:20 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:34:48 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:34:48 [Thread-19] INFO  : Stopping service [Tomcat]
+2023-06-05 19:34:48 [Thread-19] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:34:48 [Thread-19] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:34:48 [Thread-19] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:34:48 [Thread-19] INFO  : HikariPool-5 - Shutdown initiated...
+2023-06-05 19:34:48 [Thread-19] INFO  : HikariPool-5 - Shutdown completed.
+2023-06-05 19:34:48 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:34:48 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:34:48 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:34:48 [restartedMain] INFO  : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:34:48 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:34:48 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:34:48 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:34:48 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:34:48 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 365 ms
+2023-06-05 19:34:48 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:34:48 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:34:48 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:34:48 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:34:48 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:34:48 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:34:48 [restartedMain] INFO  : HikariPool-6 - Starting...
+2023-06-05 19:34:48 [restartedMain] INFO  : HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@1d1b78a6
+2023-06-05 19:34:48 [restartedMain] INFO  : HikariPool-6 - Start completed.
+2023-06-05 19:34:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:34:48 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:34:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:34:48 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:34:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:34:48 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:34:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:34:48 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:34:48 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:34:48 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:34:49 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:34:49 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:34:49 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:34:49 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:34:49 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:34:49 [restartedMain] INFO  : Completed initialization in 8 ms
+2023-06-05 19:34:49 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:34:49 [restartedMain] INFO  : Started ServiceApplication in 0.894 seconds (process running for 72996.293)
+2023-06-05 19:34:49 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:37:05 [File Watcher] INFO  : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-05 19:37:05 [Thread-26] INFO  : Stopping service [Tomcat]
+2023-06-05 19:37:05 [Thread-26] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:37:05 [Thread-26] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:37:05 [Thread-26] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:37:05 [Thread-26] INFO  : HikariPool-6 - Shutdown initiated...
+2023-06-05 19:37:05 [Thread-26] INFO  : HikariPool-6 - Shutdown completed.
+2023-06-05 19:37:05 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:37:05 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:37:06 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:37:06 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:37:06 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:37:06 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:37:06 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:37:06 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:37:06 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 422 ms
+2023-06-05 19:37:06 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:37:06 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:37:06 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:37:06 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:37:06 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:37:06 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:37:06 [restartedMain] INFO  : HikariPool-7 - Starting...
+2023-06-05 19:37:06 [restartedMain] INFO  : HikariPool-7 - Added connection org.postgresql.jdbc.PgConnection@13945f9f
+2023-06-05 19:37:06 [restartedMain] INFO  : HikariPool-7 - Start completed.
+2023-06-05 19:37:06 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:06 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:06 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:06 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:06 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:06 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:37:06 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:06 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:06 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:37:06 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:37:06 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:37:06 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:37:06 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:37:06 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:37:06 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:37:06 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:37:06 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:37:06 [restartedMain] INFO  : Started ServiceApplication in 0.993 seconds (process running for 73133.856)
+2023-06-05 19:37:06 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:37:09 [File Watcher] INFO  : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2023-06-05 19:37:09 [Thread-30] INFO  : Stopping service [Tomcat]
+2023-06-05 19:37:09 [Thread-30] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:37:09 [Thread-30] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:37:09 [Thread-30] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:37:09 [Thread-30] INFO  : HikariPool-7 - Shutdown initiated...
+2023-06-05 19:37:09 [Thread-30] INFO  : HikariPool-7 - Shutdown completed.
+2023-06-05 19:37:09 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:37:09 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:37:09 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:37:09 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:37:09 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:37:09 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:37:09 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:37:09 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:37:09 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 468 ms
+2023-06-05 19:37:09 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:37:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:37:09 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:37:09 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:37:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:37:09 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:37:09 [restartedMain] INFO  : HikariPool-8 - Starting...
+2023-06-05 19:37:10 [restartedMain] INFO  : HikariPool-8 - Added connection org.postgresql.jdbc.PgConnection@251f428d
+2023-06-05 19:37:10 [restartedMain] INFO  : HikariPool-8 - Start completed.
+2023-06-05 19:37:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:10 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:10 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:10 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:37:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:10 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:10 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:37:10 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:37:10 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:37:10 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:37:10 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:37:10 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:37:10 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:37:10 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:37:10 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:37:10 [restartedMain] INFO  : Started ServiceApplication in 1.036 seconds (process running for 73137.419)
+2023-06-05 19:37:10 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:37:56 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:37:56 [Thread-34] INFO  : Stopping service [Tomcat]
+2023-06-05 19:37:56 [Thread-34] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:37:56 [Thread-34] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:37:56 [Thread-34] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:37:56 [Thread-34] INFO  : HikariPool-8 - Shutdown initiated...
+2023-06-05 19:37:56 [Thread-34] INFO  : HikariPool-8 - Shutdown completed.
+2023-06-05 19:37:56 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:37:56 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:37:56 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:37:56 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:37:56 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:37:56 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:37:56 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:37:56 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:37:56 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 351 ms
+2023-06-05 19:37:56 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:37:56 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:37:56 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:37:56 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:37:56 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:37:57 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:37:57 [restartedMain] INFO  : HikariPool-9 - Starting...
+2023-06-05 19:37:57 [restartedMain] INFO  : HikariPool-9 - Added connection org.postgresql.jdbc.PgConnection@42c1ba2d
+2023-06-05 19:37:57 [restartedMain] INFO  : HikariPool-9 - Start completed.
+2023-06-05 19:37:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:57 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:57 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:57 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:37:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:37:57 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:37:57 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:37:57 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:37:57 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:37:57 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:37:57 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:37:57 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:37:57 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:37:57 [restartedMain] INFO  : Completed initialization in 3 ms
+2023-06-05 19:37:57 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:37:57 [restartedMain] INFO  : Started ServiceApplication in 0.865 seconds (process running for 73184.447)
+2023-06-05 19:37:57 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:38:51 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:38:51 [Thread-38] INFO  : Stopping service [Tomcat]
+2023-06-05 19:38:51 [Thread-38] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:38:51 [Thread-38] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:38:51 [Thread-38] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:38:51 [Thread-38] INFO  : HikariPool-9 - Shutdown initiated...
+2023-06-05 19:38:51 [Thread-38] INFO  : HikariPool-9 - Shutdown completed.
+2023-06-05 19:38:51 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:38:51 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:38:51 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:38:51 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:38:52 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:38:52 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:38:52 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:38:52 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:38:52 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 316 ms
+2023-06-05 19:38:52 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:38:52 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:38:52 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:38:52 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:38:52 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:38:52 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:38:52 [restartedMain] INFO  : HikariPool-10 - Starting...
+2023-06-05 19:38:52 [restartedMain] INFO  : HikariPool-10 - Added connection org.postgresql.jdbc.PgConnection@6603a2fa
+2023-06-05 19:38:52 [restartedMain] INFO  : HikariPool-10 - Start completed.
+2023-06-05 19:38:52 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:38:52 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:38:52 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:38:52 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:38:52 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:38:52 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:38:52 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:38:52 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:38:52 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:38:52 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:38:52 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:38:52 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:38:52 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:38:52 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:38:52 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:38:52 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:38:52 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:38:52 [restartedMain] INFO  : Started ServiceApplication in 0.826 seconds (process running for 73239.595)
+2023-06-05 19:38:52 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:39:43 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:39:43 [Thread-42] INFO  : Stopping service [Tomcat]
+2023-06-05 19:39:43 [Thread-42] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:39:43 [Thread-42] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:39:43 [Thread-42] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:39:43 [Thread-42] INFO  : HikariPool-10 - Shutdown initiated...
+2023-06-05 19:39:43 [Thread-42] INFO  : HikariPool-10 - Shutdown completed.
+2023-06-05 19:39:43 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:39:43 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:39:44 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:39:44 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:39:44 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:39:44 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:39:44 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:39:44 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:39:44 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 340 ms
+2023-06-05 19:39:44 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:39:44 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:39:44 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:39:44 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:39:44 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:39:44 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:39:44 [restartedMain] INFO  : HikariPool-11 - Starting...
+2023-06-05 19:39:44 [restartedMain] INFO  : HikariPool-11 - Added connection org.postgresql.jdbc.PgConnection@4542dbb6
+2023-06-05 19:39:44 [restartedMain] INFO  : HikariPool-11 - Start completed.
+2023-06-05 19:39:44 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:39:44 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:39:44 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:39:44 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:39:44 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:39:44 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:39:44 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:39:44 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:39:44 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:39:44 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:39:44 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:39:44 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:39:44 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:39:44 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:39:44 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:39:44 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:39:44 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:39:44 [restartedMain] INFO  : Started ServiceApplication in 0.836 seconds (process running for 73291.835)
+2023-06-05 19:39:44 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:40:51 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:40:51 [Thread-46] INFO  : Stopping service [Tomcat]
+2023-06-05 19:40:51 [Thread-46] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:40:51 [Thread-46] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:40:51 [Thread-46] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:40:51 [Thread-46] INFO  : HikariPool-11 - Shutdown initiated...
+2023-06-05 19:40:51 [Thread-46] INFO  : HikariPool-11 - Shutdown completed.
+2023-06-05 19:40:51 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:40:51 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:40:51 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:40:51 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:40:51 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:40:51 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:40:51 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:40:51 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:40:51 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 300 ms
+2023-06-05 19:40:51 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:40:51 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:40:51 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:40:51 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:40:51 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:40:51 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:40:51 [restartedMain] INFO  : HikariPool-12 - Starting...
+2023-06-05 19:40:51 [restartedMain] INFO  : HikariPool-12 - Added connection org.postgresql.jdbc.PgConnection@dcc7cbd
+2023-06-05 19:40:51 [restartedMain] INFO  : HikariPool-12 - Start completed.
+2023-06-05 19:40:51 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:40:51 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:40:51 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:40:51 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:40:51 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:40:51 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:40:51 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:40:51 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:40:51 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:40:51 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:40:51 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:40:52 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:40:52 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:40:52 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:40:52 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:40:52 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:40:52 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:40:52 [restartedMain] INFO  : Started ServiceApplication in 0.737 seconds (process running for 73359.202)
+2023-06-05 19:40:52 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:41:23 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:41:23 [Thread-50] INFO  : Stopping service [Tomcat]
+2023-06-05 19:41:23 [Thread-50] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:41:23 [Thread-50] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:41:23 [Thread-50] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:41:23 [Thread-50] INFO  : HikariPool-12 - Shutdown initiated...
+2023-06-05 19:41:23 [Thread-50] INFO  : HikariPool-12 - Shutdown completed.
+2023-06-05 19:41:23 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:41:23 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:41:23 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:41:23 [restartedMain] INFO  : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:41:23 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:41:23 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:41:23 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:41:23 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:41:23 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 385 ms
+2023-06-05 19:41:23 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:41:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:41:23 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:41:23 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:41:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:41:23 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:41:23 [restartedMain] INFO  : HikariPool-13 - Starting...
+2023-06-05 19:41:23 [restartedMain] INFO  : HikariPool-13 - Added connection org.postgresql.jdbc.PgConnection@4e337f67
+2023-06-05 19:41:23 [restartedMain] INFO  : HikariPool-13 - Start completed.
+2023-06-05 19:41:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:41:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:41:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:41:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:41:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:41:23 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:41:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:41:23 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:41:23 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:41:23 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:41:23 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:41:23 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:41:23 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:41:24 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:41:24 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:41:24 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:41:24 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:41:24 [restartedMain] INFO  : Started ServiceApplication in 0.896 seconds (process running for 73391.08)
+2023-06-05 19:41:24 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:41:27 [http-nio-1707-exec-1] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed: jakarta.persistence.EntityNotFoundException: Unable to find com.service.service.entity.masterdata.workflow.WorkflowGroupEntity with id 910b5222-ebdc-44bc-bc62-8ed1033dfbad] with root cause
+jakarta.persistence.EntityNotFoundException: Unable to find com.service.service.entity.masterdata.workflow.WorkflowGroupEntity with id 910b5222-ebdc-44bc-bc62-8ed1033dfbad
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:183)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:286)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:175)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:310)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:44)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:102)
+	at com.service.service.entity.masterdata.workflow.WorkflowGroupEntity$HibernateProxy$YR6YRiA5.getActive(Unknown Source)
+	at com.service.service.service.masterdata.workflow.WorkflowGroupService.update(WorkflowGroupService.java:26)
+	at com.service.service.controller.masterdata.workflow.WorkflowGroupController.update(WorkflowGroupController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-05 19:41:31 [http-nio-1707-exec-9] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed: jakarta.persistence.EntityNotFoundException: Unable to find com.service.service.entity.masterdata.workflow.WorkflowGroupEntity with id 910b5222-ebdc-44bc-bc62-8ed1033dfbad] with root cause
+jakarta.persistence.EntityNotFoundException: Unable to find com.service.service.entity.masterdata.workflow.WorkflowGroupEntity with id 910b5222-ebdc-44bc-bc62-8ed1033dfbad
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:183)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:286)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:175)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:310)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:44)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:102)
+	at com.service.service.entity.masterdata.workflow.WorkflowGroupEntity$HibernateProxy$YR6YRiA5.getActive(Unknown Source)
+	at com.service.service.service.masterdata.workflow.WorkflowGroupService.update(WorkflowGroupService.java:26)
+	at com.service.service.controller.masterdata.workflow.WorkflowGroupController.update(WorkflowGroupController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-05 19:42:23 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:42:23 [Thread-54] INFO  : Stopping service [Tomcat]
+2023-06-05 19:42:23 [Thread-54] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:42:23 [Thread-54] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:42:23 [Thread-54] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:42:23 [Thread-54] INFO  : HikariPool-13 - Shutdown initiated...
+2023-06-05 19:42:23 [Thread-54] INFO  : HikariPool-13 - Shutdown completed.
+2023-06-05 19:42:23 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:42:23 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:42:23 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:42:23 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:42:23 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:42:23 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:42:23 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:42:23 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:42:23 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 316 ms
+2023-06-05 19:42:23 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:42:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:42:23 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:42:23 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:42:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:42:23 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:42:23 [restartedMain] INFO  : HikariPool-14 - Starting...
+2023-06-05 19:42:23 [restartedMain] INFO  : HikariPool-14 - Added connection org.postgresql.jdbc.PgConnection@466f5df2
+2023-06-05 19:42:23 [restartedMain] INFO  : HikariPool-14 - Start completed.
+2023-06-05 19:42:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:42:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:42:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:42:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:42:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:42:23 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:42:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:42:23 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:42:23 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:42:23 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:42:23 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:42:24 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:42:24 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:42:24 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:42:24 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:42:24 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:42:24 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:42:24 [restartedMain] INFO  : Started ServiceApplication in 0.795 seconds (process running for 73451.227)
+2023-06-05 19:42:24 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:46:38 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:46:38 [Thread-58] INFO  : Stopping service [Tomcat]
+2023-06-05 19:46:38 [Thread-58] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:46:38 [Thread-58] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:46:38 [Thread-58] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:46:38 [Thread-58] INFO  : HikariPool-14 - Shutdown initiated...
+2023-06-05 19:46:38 [Thread-58] INFO  : HikariPool-14 - Shutdown completed.
+2023-06-05 19:46:38 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:46:38 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:46:38 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:46:38 [restartedMain] INFO  : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:46:38 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:46:38 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:46:38 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:46:39 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:46:39 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 338 ms
+2023-06-05 19:46:39 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:46:39 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:46:39 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:46:39 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:46:39 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:46:39 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:46:39 [restartedMain] INFO  : HikariPool-15 - Starting...
+2023-06-05 19:46:39 [restartedMain] INFO  : HikariPool-15 - Added connection org.postgresql.jdbc.PgConnection@50859041
+2023-06-05 19:46:39 [restartedMain] INFO  : HikariPool-15 - Start completed.
+2023-06-05 19:46:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:39 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:39 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:39 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:46:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:39 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:39 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:46:39 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:46:39 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:46:39 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:46:39 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:46:39 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:46:39 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:46:39 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:46:39 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:46:39 [restartedMain] INFO  : Started ServiceApplication in 0.845 seconds (process running for 73706.52)
+2023-06-05 19:46:39 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:46:45 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:46:45 [Thread-62] INFO  : Stopping service [Tomcat]
+2023-06-05 19:46:45 [Thread-62] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:46:45 [Thread-62] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:46:45 [Thread-62] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:46:45 [Thread-62] INFO  : HikariPool-15 - Shutdown initiated...
+2023-06-05 19:46:45 [Thread-62] INFO  : HikariPool-15 - Shutdown completed.
+2023-06-05 19:46:46 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:46:46 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:46:46 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:46:46 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:46:46 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:46:46 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:46:46 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:46:46 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:46:46 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 326 ms
+2023-06-05 19:46:46 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:46:46 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:46:46 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:46:46 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:46:46 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:46:46 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:46:46 [restartedMain] INFO  : HikariPool-16 - Starting...
+2023-06-05 19:46:46 [restartedMain] INFO  : HikariPool-16 - Added connection org.postgresql.jdbc.PgConnection@7506caab
+2023-06-05 19:46:46 [restartedMain] INFO  : HikariPool-16 - Start completed.
+2023-06-05 19:46:46 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:46 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:46 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:46 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:46 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:46 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:46:46 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:46 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:46 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:46:46 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:46:46 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:46:46 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:46:46 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:46:46 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:46:46 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:46:46 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:46:46 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:46:46 [restartedMain] INFO  : Started ServiceApplication in 0.805 seconds (process running for 73713.882)
+2023-06-05 19:46:46 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:46:53 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:46:53 [Thread-66] INFO  : Stopping service [Tomcat]
+2023-06-05 19:46:53 [Thread-66] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:46:53 [Thread-66] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:46:53 [Thread-66] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:46:53 [Thread-66] INFO  : HikariPool-16 - Shutdown initiated...
+2023-06-05 19:46:53 [Thread-66] INFO  : HikariPool-16 - Shutdown completed.
+2023-06-05 19:46:53 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:46:53 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:46:53 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:46:53 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:46:53 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:46:53 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:46:53 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:46:53 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:46:53 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 349 ms
+2023-06-05 19:46:53 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:46:53 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:46:53 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:46:53 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:46:53 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:46:53 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:46:53 [restartedMain] INFO  : HikariPool-17 - Starting...
+2023-06-05 19:46:53 [restartedMain] INFO  : HikariPool-17 - Added connection org.postgresql.jdbc.PgConnection@510d24c6
+2023-06-05 19:46:53 [restartedMain] INFO  : HikariPool-17 - Start completed.
+2023-06-05 19:46:53 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:53 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:53 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:53 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:53 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:53 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:46:53 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:46:53 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:46:53 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:46:53 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:46:54 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:46:54 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:46:54 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:46:54 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:46:54 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:46:54 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:46:54 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:46:54 [restartedMain] INFO  : Started ServiceApplication in 0.902 seconds (process running for 73721.365)
+2023-06-05 19:46:54 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:47:09 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:47:09 [Thread-70] INFO  : Stopping service [Tomcat]
+2023-06-05 19:47:09 [Thread-70] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:47:09 [Thread-70] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:47:09 [Thread-70] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:47:09 [Thread-70] INFO  : HikariPool-17 - Shutdown initiated...
+2023-06-05 19:47:09 [Thread-70] INFO  : HikariPool-17 - Shutdown completed.
+2023-06-05 19:47:10 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:47:10 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:47:10 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:47:10 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:47:10 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:47:10 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:47:10 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:47:10 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:47:10 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 351 ms
+2023-06-05 19:47:10 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:47:10 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:47:10 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:47:10 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:47:10 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:47:10 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:47:10 [restartedMain] INFO  : HikariPool-18 - Starting...
+2023-06-05 19:47:10 [restartedMain] INFO  : HikariPool-18 - Added connection org.postgresql.jdbc.PgConnection@7f36ed71
+2023-06-05 19:47:10 [restartedMain] INFO  : HikariPool-18 - Start completed.
+2023-06-05 19:47:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:10 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:47:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:10 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:47:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:10 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:47:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:10 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:47:10 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:47:10 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:47:10 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:47:10 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:47:10 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:47:10 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:47:10 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:47:10 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:47:10 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:47:10 [restartedMain] INFO  : Started ServiceApplication in 0.896 seconds (process running for 73737.962)
+2023-06-05 19:47:10 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:47:38 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:47:38 [Thread-74] INFO  : Stopping service [Tomcat]
+2023-06-05 19:47:38 [Thread-74] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:47:38 [Thread-74] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:47:38 [Thread-74] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:47:38 [Thread-74] INFO  : HikariPool-18 - Shutdown initiated...
+2023-06-05 19:47:38 [Thread-74] INFO  : HikariPool-18 - Shutdown completed.
+2023-06-05 19:47:38 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:47:38 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:47:39 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:47:39 [restartedMain] INFO  : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:47:39 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:47:39 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:47:39 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:47:39 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:47:39 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 449 ms
+2023-06-05 19:47:39 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:47:39 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:47:39 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:47:39 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:47:39 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:47:39 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:47:39 [restartedMain] INFO  : HikariPool-19 - Starting...
+2023-06-05 19:47:39 [restartedMain] INFO  : HikariPool-19 - Added connection org.postgresql.jdbc.PgConnection@38715b0f
+2023-06-05 19:47:39 [restartedMain] INFO  : HikariPool-19 - Start completed.
+2023-06-05 19:47:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:39 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:47:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:39 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:47:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:39 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:47:39 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:47:39 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:47:39 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:47:39 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:47:39 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:47:39 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:47:39 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:47:39 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:47:39 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:47:39 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:47:39 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:47:39 [restartedMain] INFO  : Started ServiceApplication in 0.987 seconds (process running for 73766.922)
+2023-06-05 19:47:39 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:48:04 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:48:04 [Thread-78] INFO  : Stopping service [Tomcat]
+2023-06-05 19:48:04 [Thread-78] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:48:04 [Thread-78] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:48:04 [Thread-78] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:48:04 [Thread-78] INFO  : HikariPool-19 - Shutdown initiated...
+2023-06-05 19:48:04 [Thread-78] INFO  : HikariPool-19 - Shutdown completed.
+2023-06-05 19:48:04 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:48:04 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:48:05 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:48:05 [restartedMain] INFO  : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:48:05 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:48:05 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:48:05 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:48:05 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:48:05 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 516 ms
+2023-06-05 19:48:05 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:48:05 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:48:05 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:48:05 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:48:05 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:48:05 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:48:05 [restartedMain] INFO  : HikariPool-20 - Starting...
+2023-06-05 19:48:05 [restartedMain] INFO  : HikariPool-20 - Added connection org.postgresql.jdbc.PgConnection@37378112
+2023-06-05 19:48:05 [restartedMain] INFO  : HikariPool-20 - Start completed.
+2023-06-05 19:48:05 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:05 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:48:05 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:05 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:48:05 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:05 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:48:05 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:05 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:48:05 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:48:05 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:48:05 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:48:05 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:48:05 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:48:05 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:48:05 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:48:05 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:48:05 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:48:05 [restartedMain] INFO  : Started ServiceApplication in 1.079 seconds (process running for 73792.923)
+2023-06-05 19:48:05 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:48:14 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:48:14 [Thread-82] INFO  : Stopping service [Tomcat]
+2023-06-05 19:48:14 [Thread-82] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:48:14 [Thread-82] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:48:14 [Thread-82] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:48:14 [Thread-82] INFO  : HikariPool-20 - Shutdown initiated...
+2023-06-05 19:48:14 [Thread-82] INFO  : HikariPool-20 - Shutdown completed.
+2023-06-05 19:48:14 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:48:14 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:48:14 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:48:14 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:48:14 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:48:14 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:48:14 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:48:14 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:48:14 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 311 ms
+2023-06-05 19:48:14 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:48:14 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:48:14 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:48:14 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:48:14 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:48:14 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:48:14 [restartedMain] INFO  : HikariPool-21 - Starting...
+2023-06-05 19:48:14 [restartedMain] INFO  : HikariPool-21 - Added connection org.postgresql.jdbc.PgConnection@8f53b6b
+2023-06-05 19:48:14 [restartedMain] INFO  : HikariPool-21 - Start completed.
+2023-06-05 19:48:14 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:14 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:48:14 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:14 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:48:14 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:14 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:48:14 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:48:14 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:48:14 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:48:14 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:48:15 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:48:15 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:48:15 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:48:15 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:48:15 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:48:15 [restartedMain] INFO  : Completed initialization in 3 ms
+2023-06-05 19:48:15 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:48:15 [restartedMain] INFO  : Started ServiceApplication in 0.827 seconds (process running for 73802.323)
+2023-06-05 19:48:15 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:49:15 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:49:15 [Thread-86] INFO  : Stopping service [Tomcat]
+2023-06-05 19:49:15 [Thread-86] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:49:15 [Thread-86] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:49:15 [Thread-86] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:49:15 [Thread-86] INFO  : HikariPool-21 - Shutdown initiated...
+2023-06-05 19:49:15 [Thread-86] INFO  : HikariPool-21 - Shutdown completed.
+2023-06-05 19:49:15 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:49:15 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:49:16 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:49:16 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:49:16 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:49:16 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:49:16 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:49:16 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:49:16 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 320 ms
+2023-06-05 19:49:16 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:49:16 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:49:16 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:49:16 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:49:16 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:49:16 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:49:16 [restartedMain] INFO  : HikariPool-22 - Starting...
+2023-06-05 19:49:16 [restartedMain] INFO  : HikariPool-22 - Added connection org.postgresql.jdbc.PgConnection@47ccdb7c
+2023-06-05 19:49:16 [restartedMain] INFO  : HikariPool-22 - Start completed.
+2023-06-05 19:49:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:16 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:49:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:16 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:49:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:16 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:49:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:16 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:49:16 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:49:16 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:49:16 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:49:16 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:49:16 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:49:16 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:49:16 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:49:16 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:49:16 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:49:16 [restartedMain] INFO  : Started ServiceApplication in 0.906 seconds (process running for 73863.733)
+2023-06-05 19:49:16 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:49:22 [http-nio-1707-exec-1] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed: java.lang.IllegalArgumentException: destination cannot be null] with root cause
+java.lang.IllegalArgumentException: destination cannot be null
+	at org.modelmapper.internal.util.Assert.notNull(Assert.java:53)
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:446)
+	at com.service.service.service.masterdata.workflow.WorkflowGroupService.update(WorkflowGroupService.java:25)
+	at com.service.service.controller.masterdata.workflow.WorkflowGroupController.update(WorkflowGroupController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-05 19:49:57 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:49:57 [Thread-90] INFO  : Stopping service [Tomcat]
+2023-06-05 19:49:57 [Thread-90] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:49:57 [Thread-90] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:49:57 [Thread-90] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:49:57 [Thread-90] INFO  : HikariPool-22 - Shutdown initiated...
+2023-06-05 19:49:57 [Thread-90] INFO  : HikariPool-22 - Shutdown completed.
+2023-06-05 19:49:57 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:49:57 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:49:57 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:49:58 [restartedMain] INFO  : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:49:58 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:49:58 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:49:58 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:49:58 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:49:58 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 351 ms
+2023-06-05 19:49:58 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:49:58 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:49:58 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:49:58 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:49:58 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:49:58 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:49:58 [restartedMain] INFO  : HikariPool-23 - Starting...
+2023-06-05 19:49:58 [restartedMain] INFO  : HikariPool-23 - Added connection org.postgresql.jdbc.PgConnection@43af937c
+2023-06-05 19:49:58 [restartedMain] INFO  : HikariPool-23 - Start completed.
+2023-06-05 19:49:58 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:58 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:49:58 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:58 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:49:58 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:58 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:49:58 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:49:58 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:49:58 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:49:58 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:49:58 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:49:58 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:49:58 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:49:58 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:49:58 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:49:58 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:49:58 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:49:58 [restartedMain] INFO  : Started ServiceApplication in 0.921 seconds (process running for 73905.688)
+2023-06-05 19:49:58 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:50:01 [http-nio-1707-exec-4] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed: java.lang.IllegalArgumentException: destination cannot be null] with root cause
+java.lang.IllegalArgumentException: destination cannot be null
+	at org.modelmapper.internal.util.Assert.notNull(Assert.java:53)
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:446)
+	at com.service.service.service.masterdata.workflow.WorkflowGroupService.update(WorkflowGroupService.java:25)
+	at com.service.service.controller.masterdata.workflow.WorkflowGroupController.update(WorkflowGroupController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-05 19:50:22 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:50:22 [Thread-94] INFO  : Stopping service [Tomcat]
+2023-06-05 19:50:22 [Thread-94] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:50:22 [Thread-94] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:50:22 [Thread-94] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:50:22 [Thread-94] INFO  : HikariPool-23 - Shutdown initiated...
+2023-06-05 19:50:22 [Thread-94] INFO  : HikariPool-23 - Shutdown completed.
+2023-06-05 19:50:22 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:50:22 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:50:22 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:50:22 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:50:23 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:50:23 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:50:23 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:50:23 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:50:23 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 454 ms
+2023-06-05 19:50:23 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:50:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:50:23 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:50:23 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:50:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:50:23 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:50:23 [restartedMain] INFO  : HikariPool-24 - Starting...
+2023-06-05 19:50:23 [restartedMain] INFO  : HikariPool-24 - Added connection org.postgresql.jdbc.PgConnection@4a285216
+2023-06-05 19:50:23 [restartedMain] INFO  : HikariPool-24 - Start completed.
+2023-06-05 19:50:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:23 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:50:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:23 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:23 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:50:23 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:50:23 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:50:23 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:50:23 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:50:23 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:50:23 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:50:23 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:50:23 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:50:23 [restartedMain] INFO  : Started ServiceApplication in 0.974 seconds (process running for 73930.554)
+2023-06-05 19:50:23 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:50:24 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:50:24 [Thread-98] INFO  : Stopping service [Tomcat]
+2023-06-05 19:50:24 [Thread-98] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:50:24 [Thread-98] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:50:24 [Thread-98] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:50:24 [Thread-98] INFO  : HikariPool-24 - Shutdown initiated...
+2023-06-05 19:50:24 [Thread-98] INFO  : HikariPool-24 - Shutdown completed.
+2023-06-05 19:50:25 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:50:25 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:50:25 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:50:25 [restartedMain] INFO  : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:50:25 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:50:25 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:50:25 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:50:25 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:50:25 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 352 ms
+2023-06-05 19:50:25 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:50:25 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:50:25 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:50:25 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:50:25 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:50:25 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:50:25 [restartedMain] INFO  : HikariPool-25 - Starting...
+2023-06-05 19:50:25 [restartedMain] INFO  : HikariPool-25 - Added connection org.postgresql.jdbc.PgConnection@3115543
+2023-06-05 19:50:25 [restartedMain] INFO  : HikariPool-25 - Start completed.
+2023-06-05 19:50:25 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:25 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:25 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:25 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:25 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:25 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:50:25 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:25 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:25 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:50:25 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:50:25 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:50:25 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:50:25 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:50:25 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:50:25 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:50:25 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:50:25 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:50:25 [restartedMain] INFO  : Started ServiceApplication in 0.88 seconds (process running for 73932.915)
+2023-06-05 19:50:25 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:50:56 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:50:56 [Thread-102] INFO  : Stopping service [Tomcat]
+2023-06-05 19:50:56 [Thread-102] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:50:56 [Thread-102] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:50:56 [Thread-102] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:50:56 [Thread-102] INFO  : HikariPool-25 - Shutdown initiated...
+2023-06-05 19:50:56 [Thread-102] INFO  : HikariPool-25 - Shutdown completed.
+2023-06-05 19:50:56 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:50:56 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:50:57 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:50:57 [restartedMain] INFO  : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:50:57 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:50:57 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:50:57 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:50:57 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:50:57 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 342 ms
+2023-06-05 19:50:57 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:50:57 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:50:57 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:50:57 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:50:57 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:50:57 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:50:57 [restartedMain] INFO  : HikariPool-26 - Starting...
+2023-06-05 19:50:57 [restartedMain] INFO  : HikariPool-26 - Added connection org.postgresql.jdbc.PgConnection@9f5c191
+2023-06-05 19:50:57 [restartedMain] INFO  : HikariPool-26 - Start completed.
+2023-06-05 19:50:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:57 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:57 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:57 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:50:57 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:50:57 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:50:57 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:50:57 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:50:57 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:50:57 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:50:57 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:50:57 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:50:57 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:50:57 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:50:57 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:50:57 [restartedMain] INFO  : Started ServiceApplication in 0.793 seconds (process running for 73964.699)
+2023-06-05 19:50:57 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:52:10 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:52:10 [Thread-106] INFO  : Stopping service [Tomcat]
+2023-06-05 19:52:10 [Thread-106] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:52:10 [Thread-106] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:10 [Thread-106] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:52:10 [Thread-106] INFO  : HikariPool-26 - Shutdown initiated...
+2023-06-05 19:52:10 [Thread-106] INFO  : HikariPool-26 - Shutdown completed.
+2023-06-05 19:52:10 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:52:10 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:52:10 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:52:10 [restartedMain] INFO  : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:52:10 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:52:10 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:52:10 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:52:10 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:52:10 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 468 ms
+2023-06-05 19:52:10 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:52:10 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:10 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:52:10 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:52:10 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:10 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:52:10 [restartedMain] INFO  : HikariPool-27 - Starting...
+2023-06-05 19:52:10 [restartedMain] INFO  : HikariPool-27 - Added connection org.postgresql.jdbc.PgConnection@588274eb
+2023-06-05 19:52:10 [restartedMain] INFO  : HikariPool-27 - Start completed.
+2023-06-05 19:52:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:10 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:11 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:11 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:11 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:52:11 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:11 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:11 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:52:11 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:11 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:52:11 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:52:11 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:52:11 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:52:11 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:52:11 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:52:11 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:52:11 [restartedMain] INFO  : Started ServiceApplication in 1.264 seconds (process running for 74038.656)
+2023-06-05 19:52:11 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:52:16 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:52:16 [Thread-110] INFO  : Stopping service [Tomcat]
+2023-06-05 19:52:16 [Thread-110] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:52:16 [Thread-110] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:16 [Thread-110] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:52:16 [Thread-110] INFO  : HikariPool-27 - Shutdown initiated...
+2023-06-05 19:52:16 [Thread-110] INFO  : HikariPool-27 - Shutdown completed.
+2023-06-05 19:52:16 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:52:16 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:52:16 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:52:16 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:52:16 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:52:16 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:52:16 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:52:16 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:52:16 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 412 ms
+2023-06-05 19:52:16 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:52:16 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:16 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:52:16 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:52:16 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:16 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:52:16 [restartedMain] INFO  : HikariPool-28 - Starting...
+2023-06-05 19:52:16 [restartedMain] INFO  : HikariPool-28 - Added connection org.postgresql.jdbc.PgConnection@677c3570
+2023-06-05 19:52:16 [restartedMain] INFO  : HikariPool-28 - Start completed.
+2023-06-05 19:52:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:16 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:16 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:16 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:52:16 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:16 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:16 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:52:16 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:16 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:52:16 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:52:16 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:52:17 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:52:17 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:52:17 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:52:17 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:52:17 [restartedMain] INFO  : Started ServiceApplication in 0.889 seconds (process running for 74044.066)
+2023-06-05 19:52:17 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:52:18 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:52:18 [Thread-114] INFO  : Stopping service [Tomcat]
+2023-06-05 19:52:18 [Thread-114] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:52:18 [Thread-114] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:18 [Thread-114] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:52:18 [Thread-114] INFO  : HikariPool-28 - Shutdown initiated...
+2023-06-05 19:52:18 [Thread-114] INFO  : HikariPool-28 - Shutdown completed.
+2023-06-05 19:52:18 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:52:18 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:52:18 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:52:18 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:52:18 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:52:18 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:52:18 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:52:18 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:52:18 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 325 ms
+2023-06-05 19:52:18 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:52:18 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:18 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:52:18 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:52:18 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:18 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:52:18 [restartedMain] INFO  : HikariPool-29 - Starting...
+2023-06-05 19:52:18 [restartedMain] INFO  : HikariPool-29 - Added connection org.postgresql.jdbc.PgConnection@28f50aff
+2023-06-05 19:52:18 [restartedMain] INFO  : HikariPool-29 - Start completed.
+2023-06-05 19:52:18 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:18 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:18 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:18 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:18 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:18 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:52:18 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:18 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:19 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:52:19 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:19 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:52:19 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:52:19 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:52:19 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:52:19 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:52:19 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:52:19 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:52:19 [restartedMain] INFO  : Started ServiceApplication in 0.803 seconds (process running for 74046.353)
+2023-06-05 19:52:19 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:52:22 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:52:22 [Thread-118] INFO  : Stopping service [Tomcat]
+2023-06-05 19:52:22 [Thread-118] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:52:22 [Thread-118] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:22 [Thread-118] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:52:22 [Thread-118] INFO  : HikariPool-29 - Shutdown initiated...
+2023-06-05 19:52:22 [Thread-118] INFO  : HikariPool-29 - Shutdown completed.
+2023-06-05 19:52:22 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:52:22 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:52:23 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:52:23 [restartedMain] INFO  : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:52:23 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:52:23 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:52:23 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:52:23 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:52:23 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 415 ms
+2023-06-05 19:52:23 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:52:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:23 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:52:23 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:52:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:23 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:52:23 [restartedMain] INFO  : HikariPool-30 - Starting...
+2023-06-05 19:52:23 [restartedMain] INFO  : HikariPool-30 - Added connection org.postgresql.jdbc.PgConnection@3bc9d79d
+2023-06-05 19:52:23 [restartedMain] INFO  : HikariPool-30 - Start completed.
+2023-06-05 19:52:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:23 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:23 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:52:23 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:23 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:23 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:52:23 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:23 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:52:23 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:52:23 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:52:23 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:52:23 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:52:23 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:52:23 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:52:23 [restartedMain] INFO  : Started ServiceApplication in 0.929 seconds (process running for 74050.819)
+2023-06-05 19:52:23 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:52:40 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:52:40 [Thread-122] INFO  : Stopping service [Tomcat]
+2023-06-05 19:52:40 [Thread-122] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:52:40 [Thread-122] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:40 [Thread-122] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:52:40 [Thread-122] INFO  : HikariPool-30 - Shutdown initiated...
+2023-06-05 19:52:40 [Thread-122] INFO  : HikariPool-30 - Shutdown completed.
+2023-06-05 19:52:40 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:52:40 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:52:40 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:52:40 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:52:40 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:52:40 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:52:40 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:52:40 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:52:40 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 463 ms
+2023-06-05 19:52:41 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:52:41 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:41 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:52:41 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:52:41 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:52:41 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:52:41 [restartedMain] INFO  : HikariPool-31 - Starting...
+2023-06-05 19:52:41 [restartedMain] INFO  : HikariPool-31 - Added connection org.postgresql.jdbc.PgConnection@76bbd708
+2023-06-05 19:52:41 [restartedMain] INFO  : HikariPool-31 - Start completed.
+2023-06-05 19:52:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:41 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:41 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:41 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:52:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:52:41 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:52:41 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:52:41 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:52:41 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:52:41 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:52:41 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:52:41 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:52:41 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:52:41 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:52:41 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:52:41 [restartedMain] INFO  : Started ServiceApplication in 0.968 seconds (process running for 74068.504)
+2023-06-05 19:52:41 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:54:00 [File Watcher] INFO  : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-05 19:54:00 [Thread-126] INFO  : Stopping service [Tomcat]
+2023-06-05 19:54:00 [Thread-126] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:54:00 [Thread-126] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:00 [Thread-126] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:54:00 [Thread-126] INFO  : HikariPool-31 - Shutdown initiated...
+2023-06-05 19:54:00 [Thread-126] INFO  : HikariPool-31 - Shutdown completed.
+2023-06-05 19:54:00 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:54:00 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:54:00 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:54:00 [restartedMain] INFO  : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:54:00 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:54:00 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:54:00 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:54:00 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:54:00 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 369 ms
+2023-06-05 19:54:00 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:54:00 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:00 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:54:00 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:54:00 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:00 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:54:00 [restartedMain] INFO  : HikariPool-32 - Starting...
+2023-06-05 19:54:00 [restartedMain] INFO  : HikariPool-32 - Added connection org.postgresql.jdbc.PgConnection@152c8b35
+2023-06-05 19:54:00 [restartedMain] INFO  : HikariPool-32 - Start completed.
+2023-06-05 19:54:00 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:00 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:00 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:00 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:00 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:00 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:54:00 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:00 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:00 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:54:00 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:00 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:54:01 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:54:01 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:54:01 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:54:01 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:54:01 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:54:01 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:54:01 [restartedMain] INFO  : Started ServiceApplication in 0.93 seconds (process running for 74148.246)
+2023-06-05 19:54:01 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:54:18 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:54:18 [Thread-130] INFO  : Stopping service [Tomcat]
+2023-06-05 19:54:18 [Thread-130] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:54:18 [Thread-130] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:18 [Thread-130] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:54:18 [Thread-130] INFO  : HikariPool-32 - Shutdown initiated...
+2023-06-05 19:54:18 [Thread-130] INFO  : HikariPool-32 - Shutdown completed.
+2023-06-05 19:54:19 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:54:19 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:54:19 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:54:19 [restartedMain] INFO  : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:54:19 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:54:19 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:54:19 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:54:19 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:54:19 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 304 ms
+2023-06-05 19:54:19 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:54:19 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:19 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:54:19 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:54:19 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:19 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:54:19 [restartedMain] INFO  : HikariPool-33 - Starting...
+2023-06-05 19:54:19 [restartedMain] INFO  : HikariPool-33 - Added connection org.postgresql.jdbc.PgConnection@62ed66b1
+2023-06-05 19:54:19 [restartedMain] INFO  : HikariPool-33 - Start completed.
+2023-06-05 19:54:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:19 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:19 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:19 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:54:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:19 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:19 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:54:19 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:19 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:54:19 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:54:19 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:54:19 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:54:19 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:54:19 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-05 19:54:19 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:54:19 [restartedMain] INFO  : Started ServiceApplication in 0.875 seconds (process running for 74166.93)
+2023-06-05 19:54:19 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:54:25 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:54:25 [Thread-134] INFO  : Stopping service [Tomcat]
+2023-06-05 19:54:25 [Thread-134] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:54:25 [Thread-134] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:25 [Thread-134] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:54:25 [Thread-134] INFO  : HikariPool-33 - Shutdown initiated...
+2023-06-05 19:54:25 [Thread-134] INFO  : HikariPool-33 - Shutdown completed.
+2023-06-05 19:54:25 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:54:25 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:54:26 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:54:26 [restartedMain] INFO  : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:54:26 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:54:26 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:54:26 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:54:26 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:54:26 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 676 ms
+2023-06-05 19:54:26 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:54:26 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:26 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:54:26 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:54:26 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:26 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:54:26 [restartedMain] INFO  : HikariPool-34 - Starting...
+2023-06-05 19:54:26 [restartedMain] INFO  : HikariPool-34 - Added connection org.postgresql.jdbc.PgConnection@1a01ea58
+2023-06-05 19:54:26 [restartedMain] INFO  : HikariPool-34 - Start completed.
+2023-06-05 19:54:26 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:26 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:26 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:26 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:26 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:26 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:54:26 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:26 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:26 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:54:26 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:26 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:54:26 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:54:26 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:54:26 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:54:26 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:54:26 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:54:26 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:54:26 [restartedMain] INFO  : Started ServiceApplication in 1.26 seconds (process running for 74173.865)
+2023-06-05 19:54:26 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:54:28 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:54:28 [Thread-138] INFO  : Stopping service [Tomcat]
+2023-06-05 19:54:28 [Thread-138] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:54:28 [Thread-138] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:28 [Thread-138] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:54:28 [Thread-138] INFO  : HikariPool-34 - Shutdown initiated...
+2023-06-05 19:54:28 [Thread-138] INFO  : HikariPool-34 - Shutdown completed.
+2023-06-05 19:54:28 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:54:28 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:54:28 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:54:28 [restartedMain] INFO  : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:54:28 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:54:28 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:54:28 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:54:28 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:54:28 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 375 ms
+2023-06-05 19:54:28 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:54:28 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:28 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:54:28 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:54:28 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:28 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:54:28 [restartedMain] INFO  : HikariPool-35 - Starting...
+2023-06-05 19:54:28 [restartedMain] INFO  : HikariPool-35 - Added connection org.postgresql.jdbc.PgConnection@4871fb5b
+2023-06-05 19:54:28 [restartedMain] INFO  : HikariPool-35 - Start completed.
+2023-06-05 19:54:28 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:28 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:28 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:28 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:28 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:28 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:54:28 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:28 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:28 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:54:28 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:28 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:54:29 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:54:29 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:54:29 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:54:29 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:54:29 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:54:29 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:54:29 [restartedMain] INFO  : Started ServiceApplication in 0.937 seconds (process running for 74176.297)
+2023-06-05 19:54:29 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:54:32 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:54:32 [Thread-142] INFO  : Stopping service [Tomcat]
+2023-06-05 19:54:32 [Thread-142] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:54:32 [Thread-142] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:32 [Thread-142] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:54:32 [Thread-142] INFO  : HikariPool-35 - Shutdown initiated...
+2023-06-05 19:54:32 [Thread-142] INFO  : HikariPool-35 - Shutdown completed.
+2023-06-05 19:54:32 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:54:32 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:54:33 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:54:33 [restartedMain] INFO  : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:54:33 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:54:33 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:54:33 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:54:33 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:54:33 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 324 ms
+2023-06-05 19:54:33 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:54:33 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:33 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:54:33 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:54:33 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:33 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:54:33 [restartedMain] INFO  : HikariPool-36 - Starting...
+2023-06-05 19:54:33 [restartedMain] INFO  : HikariPool-36 - Added connection org.postgresql.jdbc.PgConnection@27c4d022
+2023-06-05 19:54:33 [restartedMain] INFO  : HikariPool-36 - Start completed.
+2023-06-05 19:54:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:33 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:33 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:33 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:54:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:33 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:33 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:54:33 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:33 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:54:33 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:54:33 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:54:33 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:54:33 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:54:33 [restartedMain] INFO  : Completed initialization in 3 ms
+2023-06-05 19:54:33 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:54:33 [restartedMain] INFO  : Started ServiceApplication in 1.001 seconds (process running for 74180.821)
+2023-06-05 19:54:33 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:54:46 [File Watcher] INFO  : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-05 19:54:46 [Thread-146] INFO  : Stopping service [Tomcat]
+2023-06-05 19:54:46 [Thread-146] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:54:46 [Thread-146] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:46 [Thread-146] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:54:46 [Thread-146] INFO  : HikariPool-36 - Shutdown initiated...
+2023-06-05 19:54:46 [Thread-146] INFO  : HikariPool-36 - Shutdown completed.
+2023-06-05 19:54:46 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:54:46 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:54:46 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:54:46 [restartedMain] INFO  : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:54:46 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:54:46 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:54:46 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:54:46 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:54:46 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 425 ms
+2023-06-05 19:54:46 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:54:46 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:46 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:54:46 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:54:46 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:54:46 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:54:46 [restartedMain] INFO  : HikariPool-37 - Starting...
+2023-06-05 19:54:47 [restartedMain] INFO  : HikariPool-37 - Added connection org.postgresql.jdbc.PgConnection@21329626
+2023-06-05 19:54:47 [restartedMain] INFO  : HikariPool-37 - Start completed.
+2023-06-05 19:54:47 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:47 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:47 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:47 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:47 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:47 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:54:47 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:54:47 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:54:47 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:54:47 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:54:47 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:54:47 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:54:47 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:54:47 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:54:47 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:54:47 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:54:47 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:54:47 [restartedMain] INFO  : Started ServiceApplication in 1.002 seconds (process running for 74194.495)
+2023-06-05 19:54:47 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:55:09 [File Watcher] INFO  : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2023-06-05 19:55:09 [Thread-150] INFO  : Stopping service [Tomcat]
+2023-06-05 19:55:09 [Thread-150] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:55:09 [Thread-150] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:55:09 [Thread-150] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:55:09 [Thread-150] INFO  : HikariPool-37 - Shutdown initiated...
+2023-06-05 19:55:09 [Thread-150] INFO  : HikariPool-37 - Shutdown completed.
+2023-06-05 19:55:09 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:55:09 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:55:09 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:55:09 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:55:09 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:55:09 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:55:09 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:55:09 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:55:09 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 413 ms
+2023-06-05 19:55:09 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:55:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:55:09 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:55:09 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:55:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:55:09 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:55:09 [restartedMain] INFO  : HikariPool-38 - Starting...
+2023-06-05 19:55:09 [restartedMain] INFO  : HikariPool-38 - Added connection org.postgresql.jdbc.PgConnection@46340d4
+2023-06-05 19:55:09 [restartedMain] INFO  : HikariPool-38 - Start completed.
+2023-06-05 19:55:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:09 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:55:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:09 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:55:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:09 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:55:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:09 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:55:09 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:55:09 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:55:10 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:55:10 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:55:10 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:55:10 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:55:10 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:55:10 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-05 19:55:10 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:55:10 [restartedMain] INFO  : Started ServiceApplication in 0.961 seconds (process running for 74217.291)
+2023-06-05 19:55:10 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-05 19:55:19 [File Watcher] INFO  : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-06-05 19:55:19 [Thread-154] INFO  : Stopping service [Tomcat]
+2023-06-05 19:55:19 [Thread-154] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 19:55:19 [Thread-154] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:55:19 [Thread-154] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-05 19:55:19 [Thread-154] INFO  : HikariPool-38 - Shutdown initiated...
+2023-06-05 19:55:19 [Thread-154] INFO  : HikariPool-38 - Shutdown completed.
+2023-06-05 19:55:19 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 4384 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-05 19:55:19 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-05 19:55:19 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:55:19 [restartedMain] INFO  : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2023-06-05 19:55:19 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-05 19:55:19 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-05 19:55:19 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-05 19:55:19 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-05 19:55:19 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 344 ms
+2023-06-05 19:55:19 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:55:19 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:55:19 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-05 19:55:19 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-05 19:55:19 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-05 19:55:19 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:55:19 [restartedMain] INFO  : HikariPool-39 - Starting...
+2023-06-05 19:55:19 [restartedMain] INFO  : HikariPool-39 - Added connection org.postgresql.jdbc.PgConnection@767acb46
+2023-06-05 19:55:19 [restartedMain] INFO  : HikariPool-39 - Start completed.
+2023-06-05 19:55:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:19 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:55:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:19 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-05 19:55:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:19 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-05 19:55:19 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-05 19:55:19 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-05 19:55:19 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-05 19:55:19 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:55:19 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:55:20 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-05 19:55:20 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:55:20 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 19:55:20 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-05 19:55:20 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-05 19:55:20 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-05 19:55:20 [restartedMain] INFO  : Started ServiceApplication in 0.839 seconds (process running for 74227.16)
+2023-06-05 19:55:20 [restartedMain] INFO  : Condition evaluation unchanged

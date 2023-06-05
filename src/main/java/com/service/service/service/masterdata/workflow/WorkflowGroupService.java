@@ -6,11 +6,12 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.service.service.Util.CommonUtil;
 import com.service.service.entity.masterdata.workflow.WorkflowGroupEntity;
 import com.service.service.repository.masterdata.workflow.WorkflowGroupRepository;
 
 @Service
-public class WorkflowGroupService {
+public class WorkflowGroupService extends CommonUtil {
 
     @Autowired
     WorkflowGroupRepository repository;
@@ -20,12 +21,15 @@ public class WorkflowGroupService {
     }
 
     public WorkflowGroupEntity update(String id, WorkflowGroupEntity entity) {
-        Optional<WorkflowGroupEntity> entityB4 = getByIdOpt(id);
-        return (!entityB4.isEmpty() ? repository.save(entity) : null);
+        WorkflowGroupEntity entityB4 = getById(id);
+        mergeEntity(entity, entityB4);
+        return (entity != null && entityB4 != null ? repository.save(entityB4) : null);
     }
 
     public WorkflowGroupEntity getById(String id) {
-        return repository.getById(id);
+        // return repository.getById(id);
+        Optional<WorkflowGroupEntity> entity = getByIdOpt(id);
+        return !entity.isPresent() ? null : entity.get();
     }
 
     public Optional<WorkflowGroupEntity> getByIdOpt(String id) {

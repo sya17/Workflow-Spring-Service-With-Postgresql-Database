@@ -2,14 +2,21 @@ package com.service.service.Util;
 
 import java.util.List;
 
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.FieldError;
 
 import com.service.service.Util.response.ErrorResponse;
 import com.service.service.Util.response.Pagination;
 import com.service.service.Util.response.ResponseUtils;
 import com.service.service.constant.ResponRequestConstant;
+import com.service.service.entity.masterdata.workflow.WorkflowGroupEntity;
 
 public class CommonUtil {
+
+    @Autowired
+    public ModelMapper mp;
+
     public static CommonUtil INSTANCE = new CommonUtil();
 
     public static CommonUtil getInstance() {
@@ -36,8 +43,11 @@ public class CommonUtil {
         return ModdelMapperUtil.getInstance().convert(source, destinationClass);
     }
 
-    public void ConvertModelObj(Object source, Object destinationSource) {
-        ModdelMapperUtil.getInstance().convertObj(source, destinationSource);
+    public void mergeEntity(Object source, Object destinationSource) {
+        if (source != null && destinationSource != null) {
+            // ModdelMapperUtil.getInstance().mergeEntity(source, destinationSource);
+            mp.map(source, destinationSource);
+        }
     }
 
     public void setDefaultValue() {
@@ -57,8 +67,8 @@ public class CommonUtil {
             String method,
             String msg,
             List<ErrorResponse> errMsg) {
-                ResponseUtils resUtils = new ResponseUtils();
-                resUtils.setService("/" + path);
+        ResponseUtils resUtils = new ResponseUtils();
+        resUtils.setService("/" + path);
         if (!isNullOrEmpty(method)) {
             switch (method) {
                 case ResponRequestConstant.MethodConstant.POST:

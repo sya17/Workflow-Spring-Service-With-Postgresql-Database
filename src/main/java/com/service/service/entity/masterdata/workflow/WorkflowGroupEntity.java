@@ -26,6 +26,7 @@ import lombok.Setter;
 @Data // Untuk Memberikan Identitas Data yang mengakses ke Database
 @Entity // Untuk Memberikan Identitas Data yang mengakses ke Database
 @Table(name = "m_workflow_group")
+@EntityListeners(WorkflowGroupEntityListener.class)
 public class WorkflowGroupEntity {
 
     @Id

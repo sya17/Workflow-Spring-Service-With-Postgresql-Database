@@ -25,7 +25,7 @@ public class ModdelMapperUtil {
         return getModelMapper().map(source, destinationClass);
     }
 
-    public void convertObj(Object source, Object destinationSource) {
+    public void mergeEntity(Object source, Object destinationSource) {
         getModelMapper().map(source, destinationSource);
     }
 

@@ -23,6 +23,7 @@ import lombok.Setter;
 @Data // Untuk Memberikan Identitas Data yang mengakses ke Database
 @Entity // Untuk Memberikan Identitas Data yang mengakses ke Database
 @Table(name = "m_user")
+@EntityListeners(UserEntityListener.class)
 public class UserEntity {
 
     @Id

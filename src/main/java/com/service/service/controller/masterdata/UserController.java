@@ -78,7 +78,7 @@ public class UserController extends CommonUtil {
         ResponseUtils res = setGeneralResponse(
                 (isNullOrEmpty(id) ? userService.getAll()
                         : userService
-                                .getById(id)
+                                .getByIdOpt(id)
                                 .orElseThrow(() -> new NotFoundException(id + " Not Found"))),
                 path,
                 ResponRequestConstant.MethodConstant.GET);
