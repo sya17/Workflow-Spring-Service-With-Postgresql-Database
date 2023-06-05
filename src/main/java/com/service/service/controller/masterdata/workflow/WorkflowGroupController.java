@@ -25,79 +25,81 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/workflow-group")
-public class WorkflowGroupController extends CommonUtil{
-    
-    @Autowired
-    WorkflowGroupService service;
+public class WorkflowGroupController extends CommonUtil {
 
-    String path = "workflow-group";
-    
-    @PostMapping
-    ResponseEntity<ResponseUtils> create(@RequestBody @Valid WorkflowGroupDTO dto) {
-        WorkflowGroupEntity entity = service.save(ConvertModel(dto, WorkflowGroupEntity.class));
-        WorkflowGroupDTO userRes = ConvertModel(entity, WorkflowGroupDTO.class);
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(
-                        setGeneralResponse(
-                                userRes,
+        @Autowired
+        WorkflowGroupService service;
+
+        String path = "workflow-group";
+
+        @PostMapping
+        ResponseEntity<ResponseUtils> create(@RequestBody @Valid WorkflowGroupDTO dto) {
+                WorkflowGroupEntity entity = service.save(ConvertModel(dto, WorkflowGroupEntity.class));
+                WorkflowGroupDTO userRes = ConvertModel(entity, WorkflowGroupDTO.class);
+                return ResponseEntity
+                                .status(HttpStatus.OK)
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .body(
+                                                setGeneralResponse(
+                                                                userRes,
+                                                                path,
+                                                                ResponRequestConstant.MethodConstant.POST));
+        }
+
+        @PutMapping()
+        ResponseEntity<ResponseUtils> update(@RequestBody @Valid WorkflowGroupDTO dto) {
+                WorkflowGroupEntity entity = service.update(dto.getId(), ConvertModel(dto, WorkflowGroupEntity.class));
+                Object res = (entity == null ? (dto.getId() + " Not Found")
+                                : ConvertModel(entity, WorkflowGroupDTO.class));
+                return ResponseEntity
+                                .status(HttpStatus.OK)
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .body(
+                                                setGeneralResponse(
+                                                                res,
+                                                                path,
+                                                                ResponRequestConstant.MethodConstant.PUT));
+        }
+
+        @GetMapping()
+        ResponseEntity<ResponseUtils> getAll() {
+                ResponseUtils res = setGeneralResponse(
+                                service.getAll(),
                                 path,
-                                ResponRequestConstant.MethodConstant.POST));
-    }
+                                ResponRequestConstant.MethodConstant.GET);
+                setPage(res);
+                return ResponseEntity
+                                .status(HttpStatus.OK)
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .body(res);
+        }
 
-    @PutMapping()
-    ResponseEntity<ResponseUtils> update(@RequestBody @Valid WorkflowGroupDTO dto) {
-        WorkflowGroupEntity entity = service.update(dto.getId(), ConvertModel(dto, WorkflowGroupEntity.class));
-        Object res = (entity == null ? (dto.getId() + " Not Found") : ConvertModel(entity, WorkflowGroupDTO.class));
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(
-                        setGeneralResponse(
-                                res,
+        @GetMapping("/{id}")
+        ResponseEntity<ResponseUtils> getById(@PathVariable("id") String id) {
+                ResponseUtils res = setGeneralResponse(
+                                (isNullOrEmpty(id) ? service.getAll()
+                                                : service
+                                                                .getByIdOpt(id)
+                                                                .orElseThrow(() -> new NotFoundException(
+                                                                                id + " Not Found"))),
                                 path,
-                                ResponRequestConstant.MethodConstant.PUT));
-    }
+                                ResponRequestConstant.MethodConstant.GET);
+                setPage(res);
+                return ResponseEntity
+                                .status(HttpStatus.OK)
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .body(res);
+        }
 
-    @GetMapping()
-    ResponseEntity<ResponseUtils> getAll() {
-        ResponseUtils res = setGeneralResponse(
-                service.getAll(),
-                path,
-                ResponRequestConstant.MethodConstant.GET);
-        setPage(res);
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(res);
-    }
-
-    @GetMapping("/{id}")
-    ResponseEntity<ResponseUtils> getById(@PathVariable("id") String id) {
-        ResponseUtils res = setGeneralResponse(
-                (isNullOrEmpty(id) ? service.getAll()
-                        : service
-                                .getById(id)
-                                .orElseThrow(() -> new NotFoundException(id + " Not Found"))),
-                path,
-                ResponRequestConstant.MethodConstant.GET);
-        setPage(res);
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(res);
-    }
-
-    @DeleteMapping("/{id}")
-    ResponseEntity<ResponseUtils> deleteById(@PathVariable("id") String id) {
-        Object res = service.deleteById(id) ? "Delete Success" : id + " Not Found";
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .contentType(MediaType.APPLICATION_JSON)
-                .body(setGeneralResponse(
-                        res,
-                        path,
-                        ResponRequestConstant.MethodConstant.DELETE));
-    }
+        @DeleteMapping("/{id}")
+        ResponseEntity<ResponseUtils> deleteById(@PathVariable("id") String id) {
+                Object res = service.deleteById(id) ? "Delete Success" : id + " Not Found";
+                return ResponseEntity
+                                .status(HttpStatus.OK)
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .body(setGeneralResponse(
+                                                res,
+                                                path,
+                                                ResponRequestConstant.MethodConstant.DELETE));
+        }
 }

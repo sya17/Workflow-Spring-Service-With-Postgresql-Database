@@ -11,21 +11,23 @@ public class UserDTO {
 
     private String id;
 
+    // @Max(value = 100, message = "name_m_user Max 100 Character")
     @NotEmpty(message = "name_m_user must be field")
-    @Max(value = 100, message = "name_m_user 100 Character")
     private String name_m_user;
 
+    // @Max(value = 100, message = "Max username 100 Character")
+    // @Min(value = 7, message = "Min username 7 Character")
     @NotEmpty(message = "username must be field")
-    @Max(value = 100, message = "Max username 100 Character")
-    @Min(value = 7, message = "Min username 7 Character")
     private String username;
 
+    // @Max(value = 100, message = "Max password 100 Character")
+    // @Min(value = 7, message = "Min password 7 Character")
     @NotEmpty(message = "password must be field")
-    @Max(value = 100, message = "Max password 100 Character")
-    @Min(value = 7, message = "Min password 7 Character")
     private String password;
 
     @NotEmpty(message = "email must be field")
     @Email(message = "Is not email")
     private String email;
+    
+    private String active;
 }

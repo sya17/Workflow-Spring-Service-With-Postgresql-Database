@@ -7,9 +7,11 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import com.service.service.entity.masterdata.UserEntity;
+import com.service.service.entityListener.masterdata.workflow.WorkflowGroupEntityListener;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EntityListeners;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -33,7 +35,7 @@ public class WorkflowGroupEntity {
     private String id;
 
     @Column(name = "name_m_workflow_group", nullable = true, length = 100)
-    private String nameWorkflowGroup;
+    private String name_workflow_group;
 
     @Column(name = "description", nullable = true, columnDefinition = "TEXT")
     private String description;
@@ -52,9 +54,8 @@ public class WorkflowGroupEntity {
 
     @LastModifiedDate
     @Column(name = "updated")
-    private Date updated;
+    private Date updatedAt;
 
     @Column(name = "active", nullable = true, length = 1)
     private String active;
-
 }

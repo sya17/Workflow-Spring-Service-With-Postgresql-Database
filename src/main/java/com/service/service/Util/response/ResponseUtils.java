@@ -11,7 +11,7 @@ public class ResponseUtils<T> {
 
     private static ResponseUtils Instance;
 
-    private ResponseUtils() {
+    public ResponseUtils() {
     }
 
     public static synchronized ResponseUtils getInstance() {

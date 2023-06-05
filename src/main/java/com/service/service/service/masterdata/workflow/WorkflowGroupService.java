@@ -11,7 +11,7 @@ import com.service.service.repository.masterdata.workflow.WorkflowGroupRepositor
 
 @Service
 public class WorkflowGroupService {
-    
+
     @Autowired
     WorkflowGroupRepository repository;
 
@@ -20,11 +20,15 @@ public class WorkflowGroupService {
     }
 
     public WorkflowGroupEntity update(String id, WorkflowGroupEntity entity) {
-        Optional<WorkflowGroupEntity> user = getById(id);
-        return (!user.isEmpty() ? repository.save(entity) : null);
+        Optional<WorkflowGroupEntity> entityB4 = getByIdOpt(id);
+        return (!entityB4.isEmpty() ? repository.save(entity) : null);
     }
 
-    public Optional<WorkflowGroupEntity> getById(String id) {
+    public WorkflowGroupEntity getById(String id) {
+        return repository.getById(id);
+    }
+
+    public Optional<WorkflowGroupEntity> getByIdOpt(String id) {
         return repository.findById(id);
     }
 
@@ -33,11 +37,11 @@ public class WorkflowGroupService {
     }
 
     public boolean deleteById(String id) {
-        Optional<WorkflowGroupEntity> user = getById(id);
-        if(!user.isEmpty()){
+        Optional<WorkflowGroupEntity> entityB4 = getByIdOpt(id);
+        if (!entityB4.isEmpty()) {
             repository.deleteById(id);
         }
-        return !user.isEmpty();
+        return !entityB4.isEmpty();
     }
 
     public void deleteAll() {

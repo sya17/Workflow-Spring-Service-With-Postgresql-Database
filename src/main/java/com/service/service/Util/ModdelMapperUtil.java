@@ -2,7 +2,9 @@ package com.service.service.Util;
 
 import java.util.Map;
 
+import org.modelmapper.Conditions;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,12 +22,25 @@ public class ModdelMapperUtil {
     }
 
     public <S, D> D convert(S source, Class<D> destinationClass) {
-        ModelMapper modelMapper = new ModelMapper();
-        return modelMapper.map(source, destinationClass);
+        return getModelMapper().map(source, destinationClass);
+    }
+
+    public void convertObj(Object source, Object destinationSource) {
+        getModelMapper().map(source, destinationSource);
     }
 
     public Object mapToJson(Map map) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(map);
+    }
+
+    public ModelMapper getModelMapper() {
+        ModelMapper modelMapper = new ModelMapper();
+        modelMapper.getConfiguration()
+                .setPropertyCondition(Conditions.isNotNull())
+                .setCollectionsMergeEnabled(true)
+                .setSkipNullEnabled(true)
+                .setFieldMatchingEnabled(true);
+        return modelMapper;
     }
 }

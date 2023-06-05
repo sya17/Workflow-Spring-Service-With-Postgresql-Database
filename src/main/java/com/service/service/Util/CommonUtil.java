@@ -36,6 +36,10 @@ public class CommonUtil {
         return ModdelMapperUtil.getInstance().convert(source, destinationClass);
     }
 
+    public void ConvertModelObj(Object source, Object destinationSource) {
+        ModdelMapperUtil.getInstance().convertObj(source, destinationSource);
+    }
+
     public void setDefaultValue() {
 
     }
@@ -53,34 +57,35 @@ public class CommonUtil {
             String method,
             String msg,
             List<ErrorResponse> errMsg) {
-        ResponseUtils.getInstance().setService("/" + path);
+                ResponseUtils resUtils = new ResponseUtils();
+                resUtils.setService("/" + path);
         if (!isNullOrEmpty(method)) {
             switch (method) {
                 case ResponRequestConstant.MethodConstant.POST:
-                    ResponseUtils.getInstance().setMessage("Create Successfully");
+                    resUtils.setMessage("Create Successfully");
                     break;
                 case ResponRequestConstant.MethodConstant.PUT:
-                    ResponseUtils.getInstance().setMessage("Updated Successfully");
+                    resUtils.setMessage("Updated Successfully");
                     break;
                 case ResponRequestConstant.MethodConstant.GET:
-                    ResponseUtils.getInstance().setMessage("Get Successfully");
+                    resUtils.setMessage("Get Successfully");
                     break;
                 case ResponRequestConstant.MethodConstant.DELETE:
-                    ResponseUtils.getInstance().setMessage("Delete Successfully");
+                    resUtils.setMessage("Delete Successfully");
                     break;
                 default:
                     break;
             }
         }
         if (!isNullOrEmpty(msg)) {
-            ResponseUtils.getInstance().setMessage(msg);
+            resUtils.setMessage(msg);
         }
         if (errMsg != null && errMsg.size() > 0) {
-            ResponseUtils.getInstance().setErr_message(errMsg);
+            resUtils.setErr_message(errMsg);
         }
 
-        ResponseUtils.getInstance().setData(data);
-        return ResponseUtils.getInstance();
+        resUtils.setData(data);
+        return resUtils;
     }
 
     public Pagination setPage(ResponseUtils responseUtils) {
