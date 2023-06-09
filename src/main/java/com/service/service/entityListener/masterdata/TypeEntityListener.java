@@ -3,22 +3,22 @@ package com.service.service.entityListener.masterdata;
 
 import java.util.Date;
 
-import com.service.service.entity.masterdata.RolesEntity;
+import com.service.service.entity.masterdata.TypeEntity;
 
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 
-public class RolesEntityListener { 
+public class TypeEntityListener { 
  
 @PrePersist
-public void prePersist(RolesEntity entity) {
+public void prePersist(TypeEntity entity) {
         Date now = new Date();
         entity.setCreatedAt(now);
         entity.setUpdatedAt(now);
     }
 
 @PreUpdate
-public void preUpdate(RolesEntity entity) {
+public void preUpdate(TypeEntity entity) {
         entity.setUpdatedAt(new Date());
     }
 }
