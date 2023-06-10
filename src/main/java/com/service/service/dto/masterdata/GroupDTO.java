@@ -6,6 +6,7 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
+
  
  
 
@@ -13,6 +14,9 @@ import lombok.Data;
 public class GroupDTO { 
  
      private String id;
+
+     private String name_m_group;
+     private String description;
 
      private String active;
 }

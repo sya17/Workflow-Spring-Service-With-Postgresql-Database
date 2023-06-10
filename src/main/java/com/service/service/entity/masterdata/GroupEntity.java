@@ -8,6 +8,10 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import com.service.service.entityListener.masterdata.GroupEntityListener;
 
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -33,6 +37,12 @@ public class GroupEntity {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "sys_id_m_group", updatable = false, nullable = false)
     private String id;
+
+   @Column( name = "name_m_group"  ,length = 100 )
+     private String name_m_group;
+
+   @Column( name = "description"  ,columnDefinition = "TEXT")
+     private String description;
 
     @CreatedDate
     @Column(name = "created")

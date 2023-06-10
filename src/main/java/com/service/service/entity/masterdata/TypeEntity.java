@@ -8,6 +8,10 @@ import org.springframework.data.annotation.LastModifiedDate;
 
 import com.service.service.entityListener.masterdata.TypeEntityListener;
 
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityListeners;
@@ -33,6 +37,12 @@ public class TypeEntity {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "sys_id_m_type", updatable = false, nullable = false)
     private String id;
+
+   @Column( name = "name_m_type"  ,length = 100 )
+     private String name_m_type;
+
+   @Column( name = "description"  ,columnDefinition = "TEXT")
+     private String description;
 
     @CreatedDate
     @Column(name = "created")
