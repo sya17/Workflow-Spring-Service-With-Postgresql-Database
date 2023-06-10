@@ -38,11 +38,11 @@ public class GroupEntity {
     @Column(name = "sys_id_m_group", updatable = false, nullable = false)
     private String id;
 
-   @Column( name = "name_m_group"  ,length = 100 )
-     private String name_m_group;
+    @Column( name = "name_m_group"  ,length = 100 )
+    private String name_m_group;
 
-   @Column( name = "description"  ,columnDefinition = "TEXT")
-     private String description;
+    @Column( name = "description"  ,columnDefinition = "TEXT")
+    private String description;
 
     @CreatedDate
     @Column(name = "created")

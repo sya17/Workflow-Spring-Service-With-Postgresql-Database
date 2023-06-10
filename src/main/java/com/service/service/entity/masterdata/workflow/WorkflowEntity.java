@@ -23,9 +23,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import com.service.service.entity.masterdata.workflow.WorkflowGroupEntity;
-
 import com.service.service.entity.masterdata.UserEntity;
-
 @Setter // Untuk Set Paramater
 @Getter // Untuk Get Paramater
 @Data // Untuk Memberikan Identitas Data yang mengakses ke Database
@@ -42,23 +40,23 @@ public class WorkflowEntity {
     @Column(name = "sys_id_m_workflow", updatable = false, nullable = false)
     private String id;
 
-   @Column( name = "name_m_type"  ,length = 100 )
-     private String name_m_type;
+    @Column( name = "name_m_type"  ,length = 100 )
+    private String name_m_type;
 
-   @Column( name = "description"  ,columnDefinition = "TEXT")
-     private String description;
+    @Column( name = "description"  ,columnDefinition = "TEXT")
+    private String description;
 
-   @ManyToOne()
-   @JoinColumn( name = "sys_id_m_workflow_group"  )
-     private WorkflowGroupEntity sys_id_m_workflow_group;
+    @ManyToOne()
+    @JoinColumn( name = "sys_id_m_workflow_group"  )
+    private WorkflowGroupEntity sys_id_m_workflow_group;
 
-   @ManyToOne()
-   @JoinColumn( name = "created_by"  )
-     private UserEntity created_by;
+    @ManyToOne()
+    @JoinColumn( name = "created_by"  )
+    private UserEntity created_by;
 
-   @ManyToOne()
-   @JoinColumn( name = "updated_by"  )
-     private UserEntity updated_by;
+    @ManyToOne()
+    @JoinColumn( name = "updated_by"  )
+    private UserEntity updated_by;
 
     @CreatedDate
     @Column(name = "created")

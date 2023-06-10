@@ -14,9 +14,7 @@ import lombok.Data;
 public class RolesDTO { 
  
      private String id;
-
      private String name_m_roles;
      private String description;
-
      private String active;
 }

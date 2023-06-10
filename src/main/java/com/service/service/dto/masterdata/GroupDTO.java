@@ -14,9 +14,7 @@ import lombok.Data;
 public class GroupDTO { 
  
      private String id;
-
      private String name_m_group;
      private String description;
-
      private String active;
 }

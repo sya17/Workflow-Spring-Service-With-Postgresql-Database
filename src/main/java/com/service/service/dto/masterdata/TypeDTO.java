@@ -14,9 +14,7 @@ import lombok.Data;
 public class TypeDTO { 
  
      private String id;
-
      private String name_m_type;
      private String description;
-
      private String active;
 }

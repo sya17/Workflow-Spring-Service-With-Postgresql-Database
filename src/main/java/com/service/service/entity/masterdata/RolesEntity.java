@@ -38,11 +38,11 @@ public class RolesEntity {
     @Column(name = "sys_id_m_roles", updatable = false, nullable = false)
     private String id;
 
-   @Column( name = "name_m_roles"  ,length = 100 )
-     private String name_m_roles;
+    @Column( name = "name_m_roles"  ,length = 100 )
+    private String name_m_roles;
 
-   @Column( name = "description"  ,columnDefinition = "TEXT")
-     private String description;
+    @Column( name = "description"  ,columnDefinition = "TEXT")
+    private String description;
 
     @CreatedDate
     @Column(name = "created")

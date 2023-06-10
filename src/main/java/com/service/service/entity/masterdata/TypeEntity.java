@@ -38,11 +38,11 @@ public class TypeEntity {
     @Column(name = "sys_id_m_type", updatable = false, nullable = false)
     private String id;
 
-   @Column( name = "name_m_type"  ,length = 100 )
-     private String name_m_type;
+    @Column( name = "name_m_type"  ,length = 100 )
+    private String name_m_type;
 
-   @Column( name = "description"  ,columnDefinition = "TEXT")
-     private String description;
+    @Column( name = "description"  ,columnDefinition = "TEXT")
+    private String description;
 
     @CreatedDate
     @Column(name = "created")
