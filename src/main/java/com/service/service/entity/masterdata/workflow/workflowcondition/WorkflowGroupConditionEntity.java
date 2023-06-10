@@ -42,8 +42,8 @@ public class WorkflowGroupConditionEntity {
     @JoinColumn(name = "sys_id_m_workflow_group")
     private WorkflowGroupEntity id_workflow_group;
 
-    @Column(name = "description", nullable = true, columnDefinition = "TEXT")
-    private String description;
+    // @Column(name = "description", nullable = true, columnDefinition = "TEXT")
+    // private String description;
 
     @ManyToOne
     @JoinColumn(name = "created_by")

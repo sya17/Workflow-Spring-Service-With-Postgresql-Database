@@ -1,5 +1,5 @@
 
-package com.service.service.dto.masterdata.workflow;
+package com.service.service.dto.masterdata.workflow.workflowcondition;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
@@ -11,11 +11,13 @@ import lombok.Data;
  
 
 @Data
-public class WorkflowDTO { 
+public class WorkflowConditionDTO { 
  
      private String id;
-     private String name_m_workflow;
-     private String description;
+     private String name_m_condition;
+     private String operation;
+     private String field_name;
+     private String value_condition;
 
 
 

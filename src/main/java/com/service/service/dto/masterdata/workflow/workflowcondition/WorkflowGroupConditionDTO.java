@@ -9,7 +9,7 @@ public class WorkflowGroupConditionDTO {
 
     private String id;
     private WorkflowGroupEntity id_workflow_group;
-    private String description;
+    // private String description;
     private String operation;
     private String field_name;
     private String value_condition;
