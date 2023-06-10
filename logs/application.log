@@ -5086,3 +5086,1112 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2023-06-10T08:36:30.094+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
 2023-06-10T08:36:30.110+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 2.794 seconds (process running for 33585.914)
 2023-06-10T08:36:30.116+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:45:36.370+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (4 additions, 0 deletions, 20 modifications)
+2023-06-10T08:45:36.384+07:00  INFO 19916 --- [Thread-325] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:45:36.384+07:00  INFO 19916 --- [Thread-325] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:45:36.395+07:00  INFO 19916 --- [Thread-325] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:45:36.395+07:00  INFO 19916 --- [Thread-325] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:45:36.450+07:00  INFO 19916 --- [Thread-325] com.zaxxer.hikari.HikariDataSource       : HikariPool-70 - Shutdown initiated...
+2023-06-10T08:45:36.450+07:00  INFO 19916 --- [Thread-325] com.zaxxer.hikari.HikariDataSource       : HikariPool-70 - Shutdown completed.
+2023-06-10T08:45:36.697+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:45:36.697+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:45:37.486+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:45:37.544+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:45:37.742+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:45:37.742+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:45:37.749+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:45:37.776+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:45:37.776+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1074 ms
+2023-06-10T08:45:37.931+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:45:37.941+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:45:37.941+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:45:37.945+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:45:38.019+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:45:38.148+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:45:38.155+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Starting...
+2023-06-10T08:45:38.227+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-71 - Added connection org.postgresql.jdbc.PgConnection@2f536b21
+2023-06-10T08:45:38.227+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Start completed.
+2023-06-10T08:45:38.229+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.229+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:45:38.229+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:45:38.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:45:38.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:45:38.235+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.236+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:45:38.236+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.237+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:38.237+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.237+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:38.240+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.242+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:38.242+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.242+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:45:38.245+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.246+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:45:38.247+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.248+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:45:38.248+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.250+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:45:38.255+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.255+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:45:38.255+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.255+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:45:38.261+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.261+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:38.261+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:38.261+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:45:38.389+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:45:38.389+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:45:38.403+07:00  WARN 19916 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10T08:45:38.403+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:45:38.408+07:00  INFO 19916 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:45:38.455+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Shutdown initiated...
+2023-06-10T08:45:38.517+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Shutdown completed.
+2023-06-10T08:45:38.519+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:45:38.530+07:00  INFO 19916 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10T08:45:38.540+07:00 ERROR 19916 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type GroupController must be defined in its own file
+	CommonUtil cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupCONTROLLER.java:24)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+
+2023-06-10T08:45:54.870+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:45:54.871+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:45:55.491+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:45:55.547+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:45:55.723+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:45:55.723+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:45:55.723+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:45:55.750+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:45:55.750+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 878 ms
+2023-06-10T08:45:55.918+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:45:55.929+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:45:55.929+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:45:55.931+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:45:55.959+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:45:56.054+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:45:56.057+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Starting...
+2023-06-10T08:45:56.150+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-72 - Added connection org.postgresql.jdbc.PgConnection@1b6ab1fc
+2023-06-10T08:45:56.150+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Start completed.
+2023-06-10T08:45:56.150+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.155+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:45:56.155+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.155+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:45:56.157+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.157+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:45:56.157+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.157+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:45:56.160+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.160+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:45:56.160+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.160+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:56.160+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.160+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:56.165+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.165+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:56.165+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.165+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:45:56.165+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.165+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:45:56.171+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.171+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:45:56.171+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:45:56.174+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:45:56.310+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:45:56.310+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:45:56.323+07:00  WARN 19916 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10T08:45:56.323+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:45:56.323+07:00  INFO 19916 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:45:56.385+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Shutdown initiated...
+2023-06-10T08:45:56.455+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Shutdown completed.
+2023-06-10T08:45:56.455+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:45:56.472+07:00  INFO 19916 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10T08:45:56.472+07:00 ERROR 19916 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type GroupController must be defined in its own file
+	CommonUtil cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupCONTROLLER.java:24)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+
+2023-06-10T08:46:35.895+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:46:35.895+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:46:36.495+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:46:36.546+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:46:36.750+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:46:36.752+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:46:36.753+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:46:36.783+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:46:36.783+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 888 ms
+2023-06-10T08:46:36.931+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:46:36.951+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:46:36.951+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:46:36.955+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:46:36.994+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:46:37.131+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:46:37.133+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Starting...
+2023-06-10T08:46:37.223+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-73 - Added connection org.postgresql.jdbc.PgConnection@74cbe9c2
+2023-06-10T08:46:37.223+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Start completed.
+2023-06-10T08:46:37.226+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.226+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:37.227+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.228+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:37.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:37.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:37.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:37.239+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.239+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:37.239+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.239+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:37.242+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.244+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:37.245+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.245+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:46:37.247+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.247+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:46:37.250+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.250+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:46:37.250+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.250+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:46:37.255+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.255+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:46:37.257+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.257+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:37.257+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.257+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:37.260+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:37.260+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:46:37.442+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:46:37.443+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:46:37.463+07:00  WARN 19916 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10T08:46:37.463+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:46:37.463+07:00  INFO 19916 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:46:37.572+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Shutdown initiated...
+2023-06-10T08:46:37.653+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Shutdown completed.
+2023-06-10T08:46:37.655+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:46:37.678+07:00  INFO 19916 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10T08:46:37.687+07:00 ERROR 19916 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type GroupController must be defined in its own file
+	CommonUtil cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupCONTROLLER.java:24)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+
+2023-06-10T08:46:39.196+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:46:39.196+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:46:39.864+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:46:39.918+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:46:40.129+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:46:40.130+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:46:40.130+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:46:40.159+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:46:40.159+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 963 ms
+2023-06-10T08:46:40.288+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:46:40.295+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:46:40.295+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:46:40.299+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:46:40.339+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:46:40.463+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:46:40.463+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Starting...
+2023-06-10T08:46:40.538+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-74 - Added connection org.postgresql.jdbc.PgConnection@7343921f
+2023-06-10T08:46:40.538+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Start completed.
+2023-06-10T08:46:40.544+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.545+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:40.546+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.548+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:40.548+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.548+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:40.548+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.548+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:40.552+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.552+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:40.552+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.552+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:40.556+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.556+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:40.556+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.556+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.560+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:46:40.567+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.569+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:46:40.569+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.569+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:40.569+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.569+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:40.569+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:40.569+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:46:40.729+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:46:40.729+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:46:41.251+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:46:42.434+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:46:42.455+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:46:42.530+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:46:42.530+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:46:42.533+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-10T08:46:42.533+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:46:42.557+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 3.413 seconds (process running for 34198.359)
+2023-06-10T08:46:42.562+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:46:47.002+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 18 class path changes (3 additions, 0 deletions, 15 modifications)
+2023-06-10T08:46:47.021+07:00  INFO 19916 --- [Thread-329] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:46:47.021+07:00  INFO 19916 --- [Thread-329] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:46:47.032+07:00  INFO 19916 --- [Thread-329] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:46:47.032+07:00  INFO 19916 --- [Thread-329] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:46:47.111+07:00  INFO 19916 --- [Thread-329] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Shutdown initiated...
+2023-06-10T08:46:47.117+07:00  INFO 19916 --- [Thread-329] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Shutdown completed.
+2023-06-10T08:46:47.328+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:46:47.329+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:46:47.970+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:46:48.026+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:46:48.205+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:46:48.205+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:46:48.205+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:46:48.238+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:46:48.238+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 908 ms
+2023-06-10T08:46:48.374+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:46:48.407+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:46:48.407+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:46:48.407+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:46:48.444+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:46:48.540+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:46:48.540+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Starting...
+2023-06-10T08:46:48.616+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-75 - Added connection org.postgresql.jdbc.PgConnection@74dde9c0
+2023-06-10T08:46:48.616+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Start completed.
+2023-06-10T08:46:48.616+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.616+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:48.616+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.616+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:48.621+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.621+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:46:48.623+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.623+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:48.624+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.631+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:46:48.631+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.632+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:46:48.634+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.634+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:46:48.634+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.634+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:46:48.637+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.637+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:46:48.637+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.639+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:46:48.639+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.641+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:46:48.642+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:46:48.643+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:46:48.805+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:46:48.813+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:46:49.397+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:46:50.285+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:46:50.288+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:46:50.330+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:46:50.330+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:46:50.330+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-10T08:46:50.330+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:46:50.349+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 3.07 seconds (process running for 34206.152)
+2023-06-10T08:46:50.355+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:47:36.125+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10T08:47:36.156+07:00  INFO 19916 --- [Thread-342] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:47:36.156+07:00  INFO 19916 --- [Thread-342] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:47:36.172+07:00  INFO 19916 --- [Thread-342] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:47:36.172+07:00  INFO 19916 --- [Thread-342] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:47:36.247+07:00  INFO 19916 --- [Thread-342] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Shutdown initiated...
+2023-06-10T08:47:36.249+07:00  INFO 19916 --- [Thread-342] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Shutdown completed.
+2023-06-10T08:47:36.467+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:47:36.470+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:47:37.095+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:47:37.147+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:47:37.309+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:47:37.313+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:47:37.313+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:47:37.339+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:47:37.339+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 866 ms
+2023-06-10T08:47:37.478+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:47:37.488+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:47:37.489+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:47:37.492+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:47:37.537+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:47:37.631+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:47:37.631+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Starting...
+2023-06-10T08:47:37.715+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-76 - Added connection org.postgresql.jdbc.PgConnection@24c67856
+2023-06-10T08:47:37.715+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Start completed.
+2023-06-10T08:47:37.717+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.718+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:47:37.718+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.721+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:47:37.729+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.729+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:47:37.729+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.732+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:47:37.733+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.733+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:47:37.735+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.735+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:47:37.736+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.737+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:47:37.738+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.738+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:47:37.740+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.740+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:47:37.740+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.742+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:47:37.744+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.744+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:47:37.746+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.746+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:47:37.746+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.746+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:47:37.750+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.750+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:47:37.750+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.752+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:47:37.753+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:47:37.754+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:47:37.913+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:47:37.913+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:47:38.271+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:47:39.064+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:47:39.068+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:47:39.108+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:47:39.110+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:47:39.111+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-10T08:47:39.113+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:47:39.122+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 2.71 seconds (process running for 34254.931)
+2023-06-10T08:47:39.132+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:48:40.330+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10T08:48:40.340+07:00  INFO 19916 --- [Thread-346] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:48:40.342+07:00  INFO 19916 --- [Thread-346] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:48:40.349+07:00  INFO 19916 --- [Thread-346] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:48:40.349+07:00  INFO 19916 --- [Thread-346] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:48:40.417+07:00  INFO 19916 --- [Thread-346] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Shutdown initiated...
+2023-06-10T08:48:40.418+07:00  INFO 19916 --- [Thread-346] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Shutdown completed.
+2023-06-10T08:48:40.630+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:48:40.630+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:48:41.296+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:48:41.371+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:48:41.547+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:48:41.555+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:48:41.556+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:48:41.591+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:48:41.594+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 962 ms
+2023-06-10T08:48:41.707+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:48:41.713+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:48:41.713+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:48:41.718+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:48:41.751+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:48:41.862+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:48:41.862+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Starting...
+2023-06-10T08:48:41.960+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-77 - Added connection org.postgresql.jdbc.PgConnection@bf2524
+2023-06-10T08:48:41.961+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Start completed.
+2023-06-10T08:48:41.962+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.963+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:48:41.963+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.963+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:48:41.963+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.963+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:48:41.963+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.963+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:48:41.968+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.968+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:48:41.968+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.968+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:48:41.968+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.968+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:48:41.975+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.975+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:48:41.975+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.975+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:48:41.979+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.979+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:48:41.979+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.979+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:48:41.979+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.984+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:48:41.984+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.984+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:48:41.984+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.984+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:48:41.989+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.989+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:48:41.990+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:48:41.990+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:48:42.107+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:48:42.109+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:48:42.121+07:00  WARN 19916 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10T08:48:42.121+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:48:42.121+07:00  INFO 19916 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:48:42.177+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Shutdown initiated...
+2023-06-10T08:48:42.257+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Shutdown completed.
+2023-06-10T08:48:42.257+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:48:42.279+07:00  INFO 19916 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10T08:48:42.283+07:00 ERROR 19916 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	GroupService cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupController.java:32)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+
+2023-06-10T08:50:08.386+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:50:08.387+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:50:09.040+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:50:09.097+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:50:09.265+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:50:09.266+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:50:09.266+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:50:09.295+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:50:09.295+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 904 ms
+2023-06-10T08:50:09.419+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:50:09.432+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:50:09.434+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:50:09.435+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:50:09.499+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:50:09.611+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:50:09.613+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Starting...
+2023-06-10T08:50:09.699+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-78 - Added connection org.postgresql.jdbc.PgConnection@186838f5
+2023-06-10T08:50:09.701+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Start completed.
+2023-06-10T08:50:09.702+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.703+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:50:09.705+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.706+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:50:09.706+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.707+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:50:09.708+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.708+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:50:09.709+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.710+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:50:09.711+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.712+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:50:09.714+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.714+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:50:09.715+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.716+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:50:09.718+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.718+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:50:09.719+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.720+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:50:09.721+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.722+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:50:09.723+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.723+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:50:09.724+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.725+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:50:09.726+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.726+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:50:09.728+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.729+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:50:09.730+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:50:09.730+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:50:09.847+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:50:09.848+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:50:10.285+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:50:11.137+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:50:11.145+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:50:11.185+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:50:11.185+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:50:11.188+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-10T08:50:11.189+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:50:11.204+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 2.871 seconds (process running for 34407.008)
+2023-06-10T08:50:11.210+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:53:08.061+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10T08:53:08.075+07:00  INFO 19916 --- [Thread-350] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:53:08.076+07:00  INFO 19916 --- [Thread-350] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:53:08.086+07:00  INFO 19916 --- [Thread-350] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:53:08.086+07:00  INFO 19916 --- [Thread-350] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:53:08.150+07:00  INFO 19916 --- [Thread-350] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Shutdown initiated...
+2023-06-10T08:53:08.155+07:00  INFO 19916 --- [Thread-350] com.zaxxer.hikari.HikariDataSource       : HikariPool-78 - Shutdown completed.
+2023-06-10T08:53:08.377+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:53:08.377+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:53:08.924+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:53:08.974+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:53:09.182+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:53:09.183+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:53:09.183+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:53:09.209+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:53:09.213+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2023-06-10T08:53:09.401+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:53:09.412+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:53:09.412+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:53:09.417+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:53:09.449+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:53:09.541+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:53:09.548+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Starting...
+2023-06-10T08:53:09.618+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-79 - Added connection org.postgresql.jdbc.PgConnection@27fdf613
+2023-06-10T08:53:09.623+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Start completed.
+2023-06-10T08:53:09.623+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.625+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:53:09.625+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.625+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:53:09.628+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.628+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:53:09.628+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.628+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:53:09.631+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.632+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:53:09.632+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.632+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:09.632+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.632+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:09.636+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.636+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:09.637+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.637+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:53:09.639+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.639+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:53:09.641+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.641+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:53:09.641+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.641+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:53:09.641+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.645+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:53:09.645+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.646+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:53:09.647+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.647+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:09.649+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:09.649+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:53:09.775+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:53:09.775+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:53:10.350+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:53:11.411+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:53:11.428+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:53:11.486+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:53:11.486+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:53:11.488+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-10T08:53:11.492+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:53:11.513+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 3.195 seconds (process running for 34587.317)
+2023-06-10T08:53:11.520+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:53:54.565+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10T08:53:54.579+07:00  INFO 19916 --- [Thread-357] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:53:54.579+07:00  INFO 19916 --- [Thread-357] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:53:54.593+07:00  INFO 19916 --- [Thread-357] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:53:54.595+07:00  INFO 19916 --- [Thread-357] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:53:54.665+07:00  INFO 19916 --- [Thread-357] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Shutdown initiated...
+2023-06-10T08:53:54.668+07:00  INFO 19916 --- [Thread-357] com.zaxxer.hikari.HikariDataSource       : HikariPool-79 - Shutdown completed.
+2023-06-10T08:53:54.899+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:53:54.899+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:53:55.547+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:53:55.610+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:53:55.819+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:53:55.819+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:53:55.819+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:53:55.850+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:53:55.850+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+2023-06-10T08:53:55.968+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:53:55.973+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:53:55.973+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:53:55.978+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:53:56.016+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:53:56.119+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:53:56.119+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Starting...
+2023-06-10T08:53:56.205+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-80 - Added connection org.postgresql.jdbc.PgConnection@2c954f7
+2023-06-10T08:53:56.205+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Start completed.
+2023-06-10T08:53:56.208+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.208+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:53:56.209+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.209+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:53:56.209+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.209+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:53:56.213+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.213+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:53:56.215+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.215+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:53:56.216+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.216+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:56.218+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.219+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:56.219+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.220+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:56.220+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.222+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:53:56.222+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.223+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:53:56.223+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.225+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:53:56.226+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.226+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:53:56.228+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.228+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:53:56.229+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.229+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:53:56.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.231+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:53:56.232+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:53:56.232+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:53:56.368+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:53:56.368+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:53:56.739+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:53:57.564+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:53:57.573+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:53:57.605+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:53:57.605+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:53:57.611+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-10T08:53:57.611+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:53:57.630+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 2.786 seconds (process running for 34633.434)
+2023-06-10T08:53:57.636+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:55:22.376+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10T08:55:22.392+07:00  INFO 19916 --- [Thread-361] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:55:22.392+07:00  INFO 19916 --- [Thread-361] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:55:22.400+07:00  INFO 19916 --- [Thread-361] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:55:22.400+07:00  INFO 19916 --- [Thread-361] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:55:22.493+07:00  INFO 19916 --- [Thread-361] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Shutdown initiated...
+2023-06-10T08:55:22.493+07:00  INFO 19916 --- [Thread-361] com.zaxxer.hikari.HikariDataSource       : HikariPool-80 - Shutdown completed.
+2023-06-10T08:55:22.729+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:55:22.729+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:55:23.336+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:55:23.390+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:55:23.579+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:55:23.581+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:55:23.581+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:55:23.606+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:55:23.606+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 877 ms
+2023-06-10T08:55:23.746+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:55:23.757+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:55:23.757+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:55:23.757+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:55:23.789+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:55:23.936+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:55:23.936+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Starting...
+2023-06-10T08:55:24.023+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-81 - Added connection org.postgresql.jdbc.PgConnection@7b8ad710
+2023-06-10T08:55:24.024+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Start completed.
+2023-06-10T08:55:24.025+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.025+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:55:24.027+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.027+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:55:24.028+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.028+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:55:24.029+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.030+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:55:24.030+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.032+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:55:24.032+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.033+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:55:24.034+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.034+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:55:24.036+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.036+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:55:24.037+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.037+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:55:24.038+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.040+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:55:24.040+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.040+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:55:24.040+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.043+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:55:24.044+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.044+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:55:24.046+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.046+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:55:24.046+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.048+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:55:24.048+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:55:24.048+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:55:24.163+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:55:24.163+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:55:24.563+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:55:25.384+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:55:25.390+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:55:25.432+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:55:25.432+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:55:25.432+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-06-10T08:55:25.432+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:55:25.448+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 2.771 seconds (process running for 34721.255)
+2023-06-10T08:55:25.459+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:57:31.843+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10T08:57:31.871+07:00  INFO 19916 --- [Thread-365] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T08:57:31.872+07:00  INFO 19916 --- [Thread-365] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T08:57:31.886+07:00  INFO 19916 --- [Thread-365] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:57:31.886+07:00  INFO 19916 --- [Thread-365] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T08:57:31.975+07:00  INFO 19916 --- [Thread-365] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Shutdown initiated...
+2023-06-10T08:57:31.978+07:00  INFO 19916 --- [Thread-365] com.zaxxer.hikari.HikariDataSource       : HikariPool-81 - Shutdown completed.
+2023-06-10T08:57:32.188+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T08:57:32.189+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T08:57:32.883+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T08:57:32.948+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 8 JPA repository interfaces.
+2023-06-10T08:57:33.213+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T08:57:33.215+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T08:57:33.215+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T08:57:33.251+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T08:57:33.252+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1060 ms
+2023-06-10T08:57:33.428+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T08:57:33.442+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:57:33.442+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T08:57:33.444+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T08:57:33.487+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T08:57:33.682+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T08:57:33.685+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Starting...
+2023-06-10T08:57:33.760+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-82 - Added connection org.postgresql.jdbc.PgConnection@5f151c8c
+2023-06-10T08:57:33.762+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Start completed.
+2023-06-10T08:57:33.764+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.764+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:57:33.765+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.766+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:57:33.767+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.768+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T08:57:33.770+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.770+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:57:33.771+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.772+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T08:57:33.773+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.774+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:57:33.775+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.776+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:57:33.777+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.777+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:57:33.778+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.779+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T08:57:33.780+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.780+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T08:57:33.781+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.781+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T08:57:33.784+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.784+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T08:57:33.786+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.786+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T08:57:33.788+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.788+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T08:57:33.789+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.789+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T08:57:33.791+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T08:57:33.791+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T08:57:33.923+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T08:57:33.925+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T08:57:34.345+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T08:57:35.139+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T08:57:35.145+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T08:57:35.184+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T08:57:35.184+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T08:57:35.187+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-10T08:57:35.188+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T08:57:35.208+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 3.069 seconds (process running for 34851.011)
+2023-06-10T08:57:35.211+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-06-10T08:57:37.438+07:00  INFO 19916 --- [http-nio-1707-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 402 ms
+2023-06-10T08:59:19.104+07:00 ERROR 19916 --- [http-nio-1707-exec-2] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed: org.modelmapper.ConfigurationException: ModelMapper configuration errors:
+
+1) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setCreatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setUpdatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2 errors] with root cause
+
+org.modelmapper.ConfigurationException: ModelMapper configuration errors:
+
+1) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setCreatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setUpdatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2 errors
+	at org.modelmapper.internal.Errors.throwConfigurationExceptionIfErrorsExist(Errors.java:241)
+	at org.modelmapper.internal.ImplicitMappingBuilder.matchDestination(ImplicitMappingBuilder.java:159)
+	at org.modelmapper.internal.ImplicitMappingBuilder.build(ImplicitMappingBuilder.java:90)
+	at org.modelmapper.internal.ImplicitMappingBuilder.build(ImplicitMappingBuilder.java:75)
+	at org.modelmapper.internal.TypeMapStore.getOrCreate(TypeMapStore.java:131)
+	at org.modelmapper.internal.TypeMapStore.getOrCreate(TypeMapStore.java:106)
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:112)
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:71)
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:573)
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:406)
+	at com.service.service.Util.ModdelMapperUtil.convert(ModdelMapperUtil.java:25)
+	at com.service.service.Util.CommonUtil.ConvertModel(CommonUtil.java:43)
+	at com.service.service.controller.masterdata.workflow.WorkflowController.create(WorkflowController.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-06-10T09:00:09.234+07:00  INFO 19916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10T09:00:09.259+07:00  INFO 19916 --- [Thread-369] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-06-10T09:00:09.259+07:00  INFO 19916 --- [Thread-369] o.a.c.c.C.[.[localhost].[/api]           : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10T09:00:09.271+07:00  INFO 19916 --- [Thread-369] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T09:00:09.274+07:00  INFO 19916 --- [Thread-369] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10T09:00:09.340+07:00  INFO 19916 --- [Thread-369] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Shutdown initiated...
+2023-06-10T09:00:09.340+07:00  INFO 19916 --- [Thread-369] com.zaxxer.hikari.HikariDataSource       : HikariPool-82 - Shutdown completed.
+2023-06-10T09:00:09.545+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10T09:00:09.545+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T09:00:10.186+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10T09:00:10.237+07:00  INFO 19916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+2023-06-10T09:00:10.439+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10T09:00:10.439+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-10T09:00:10.439+07:00  INFO 19916 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10T09:00:10.471+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring embedded WebApplicationContext
+2023-06-10T09:00:10.473+07:00  INFO 19916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 919 ms
+2023-06-10T09:00:10.641+07:00  INFO 19916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10T09:00:10.674+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T09:00:10.674+07:00  INFO 19916 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10T09:00:10.674+07:00  INFO 19916 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10T09:00:10.710+07:00  INFO 19916 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10T09:00:10.824+07:00  INFO 19916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10T09:00:10.824+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-83 - Starting...
+2023-06-10T09:00:10.909+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-83 - Added connection org.postgresql.jdbc.PgConnection@4c4f79b0
+2023-06-10T09:00:10.909+07:00  INFO 19916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-83 - Start completed.
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow" does not exist, skipping
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T09:00:10.912+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.918+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group" does not exist, skipping
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_group" does not exist, skipping
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.919+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_roles" does not exist, skipping
+2023-06-10T09:00:10.926+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.926+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_type" does not exist, skipping
+2023-06-10T09:00:10.926+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.926+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_user" does not exist, skipping
+2023-06-10T09:00:10.929+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.929+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow" does not exist, skipping
+2023-06-10T09:00:10.929+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.929+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group" does not exist, skipping
+2023-06-10T09:00:10.929+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.929+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10T09:00:10.935+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2023-06-10T09:00:10.935+07:00  WARN 19916 --- [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "tr_incident" does not exist, skipping
+2023-06-10T09:00:11.055+07:00  INFO 19916 --- [restartedMain] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10T09:00:11.055+07:00  INFO 19916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10T09:00:11.484+07:00  WARN 19916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10T09:00:12.412+07:00  INFO 19916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-10T09:00:12.414+07:00  INFO 19916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10T09:00:12.460+07:00  INFO 19916 --- [restartedMain] o.a.c.c.C.[.[localhost].[/api]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10T09:00:12.461+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-10T09:00:12.464+07:00  INFO 19916 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-10T09:00:12.464+07:00  INFO 19916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10T09:00:12.476+07:00  INFO 19916 --- [restartedMain] com.service.service.ServiceApplication   : Started ServiceApplication in 2.99 seconds (process running for 35008.284)
+2023-06-10T09:00:12.484+07:00  INFO 19916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

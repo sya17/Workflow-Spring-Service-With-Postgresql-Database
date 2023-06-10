@@ -16,7 +16,7 @@ import com.service.service.entity.masterdata.UserEntity;
 public class WorkflowDTO { 
  
      private String id;
-     private String name_m_type;
+     private String name_m_workflow;
      private String description;
      private WorkflowGroupEntity sys_id_m_workflow_group;
      private UserEntity created_by;

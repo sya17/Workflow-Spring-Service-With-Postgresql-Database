@@ -5042,3 +5042,1102 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2023-06-10 08:36:30 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
 2023-06-10 08:36:30 [restartedMain] INFO  : Started ServiceApplication in 2.794 seconds (process running for 33585.914)
 2023-06-10 08:36:30 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:45:36 [File Watcher] INFO  : Restarting due to 24 class path changes (4 additions, 0 deletions, 20 modifications)
+2023-06-10 08:45:36 [Thread-325] INFO  : Stopping service [Tomcat]
+2023-06-10 08:45:36 [Thread-325] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:45:36 [Thread-325] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:45:36 [Thread-325] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:45:36 [Thread-325] INFO  : HikariPool-70 - Shutdown initiated...
+2023-06-10 08:45:36 [Thread-325] INFO  : HikariPool-70 - Shutdown completed.
+2023-06-10 08:45:36 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:45:36 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:45:37 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:45:37 [restartedMain] INFO  : Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:45:37 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:45:37 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:45:37 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:45:37 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:45:37 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1074 ms
+2023-06-10 08:45:37 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:45:37 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:45:37 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:45:37 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:45:38 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:45:38 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:45:38 [restartedMain] INFO  : HikariPool-71 - Starting...
+2023-06-10 08:45:38 [restartedMain] INFO  : HikariPool-71 - Added connection org.postgresql.jdbc.PgConnection@2f536b21
+2023-06-10 08:45:38 [restartedMain] INFO  : HikariPool-71 - Start completed.
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:38 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:45:38 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:45:38 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:45:38 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10 08:45:38 [restartedMain] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:45:38 [restartedMain] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:45:38 [restartedMain] INFO  : HikariPool-71 - Shutdown initiated...
+2023-06-10 08:45:38 [restartedMain] INFO  : HikariPool-71 - Shutdown completed.
+2023-06-10 08:45:38 [restartedMain] INFO  : Stopping service [Tomcat]
+2023-06-10 08:45:38 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10 08:45:38 [restartedMain] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type GroupController must be defined in its own file
+	CommonUtil cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupCONTROLLER.java:24)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+2023-06-10 08:45:54 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:45:54 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:45:55 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:45:55 [restartedMain] INFO  : Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:45:55 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:45:55 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:45:55 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:45:55 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:45:55 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 878 ms
+2023-06-10 08:45:55 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:45:55 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:45:55 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:45:55 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:45:55 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:45:56 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:45:56 [restartedMain] INFO  : HikariPool-72 - Starting...
+2023-06-10 08:45:56 [restartedMain] INFO  : HikariPool-72 - Added connection org.postgresql.jdbc.PgConnection@1b6ab1fc
+2023-06-10 08:45:56 [restartedMain] INFO  : HikariPool-72 - Start completed.
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:45:56 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:45:56 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:45:56 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:45:56 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10 08:45:56 [restartedMain] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:45:56 [restartedMain] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:45:56 [restartedMain] INFO  : HikariPool-72 - Shutdown initiated...
+2023-06-10 08:45:56 [restartedMain] INFO  : HikariPool-72 - Shutdown completed.
+2023-06-10 08:45:56 [restartedMain] INFO  : Stopping service [Tomcat]
+2023-06-10 08:45:56 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10 08:45:56 [restartedMain] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type GroupController must be defined in its own file
+	CommonUtil cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupCONTROLLER.java:24)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+2023-06-10 08:46:35 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:46:35 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:46:36 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:46:36 [restartedMain] INFO  : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:46:36 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:46:36 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:46:36 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:46:36 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:46:36 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 888 ms
+2023-06-10 08:46:36 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:46:36 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:46:36 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:46:36 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:46:36 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:46:37 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:46:37 [restartedMain] INFO  : HikariPool-73 - Starting...
+2023-06-10 08:46:37 [restartedMain] INFO  : HikariPool-73 - Added connection org.postgresql.jdbc.PgConnection@74cbe9c2
+2023-06-10 08:46:37 [restartedMain] INFO  : HikariPool-73 - Start completed.
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:37 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:46:37 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:46:37 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:46:37 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10 08:46:37 [restartedMain] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:46:37 [restartedMain] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:46:37 [restartedMain] INFO  : HikariPool-73 - Shutdown initiated...
+2023-06-10 08:46:37 [restartedMain] INFO  : HikariPool-73 - Shutdown completed.
+2023-06-10 08:46:37 [restartedMain] INFO  : Stopping service [Tomcat]
+2023-06-10 08:46:37 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10 08:46:37 [restartedMain] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type GroupController must be defined in its own file
+	CommonUtil cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupCONTROLLER.java:24)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+2023-06-10 08:46:39 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:46:39 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:46:39 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:46:39 [restartedMain] INFO  : Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:46:40 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:46:40 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:46:40 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:46:40 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:46:40 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 963 ms
+2023-06-10 08:46:40 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:46:40 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:46:40 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:46:40 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:46:40 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:46:40 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:46:40 [restartedMain] INFO  : HikariPool-74 - Starting...
+2023-06-10 08:46:40 [restartedMain] INFO  : HikariPool-74 - Added connection org.postgresql.jdbc.PgConnection@7343921f
+2023-06-10 08:46:40 [restartedMain] INFO  : HikariPool-74 - Start completed.
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:40 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:46:40 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:46:40 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:46:41 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:46:42 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:46:42 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:46:42 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:46:42 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:46:42 [restartedMain] INFO  : Completed initialization in 3 ms
+2023-06-10 08:46:42 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:46:42 [restartedMain] INFO  : Started ServiceApplication in 3.413 seconds (process running for 34198.359)
+2023-06-10 08:46:42 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:46:47 [File Watcher] INFO  : Restarting due to 18 class path changes (3 additions, 0 deletions, 15 modifications)
+2023-06-10 08:46:47 [Thread-329] INFO  : Stopping service [Tomcat]
+2023-06-10 08:46:47 [Thread-329] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:46:47 [Thread-329] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:46:47 [Thread-329] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:46:47 [Thread-329] INFO  : HikariPool-74 - Shutdown initiated...
+2023-06-10 08:46:47 [Thread-329] INFO  : HikariPool-74 - Shutdown completed.
+2023-06-10 08:46:47 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:46:47 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:46:47 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:46:48 [restartedMain] INFO  : Finished Spring Data repository scanning in 55 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:46:48 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:46:48 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:46:48 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:46:48 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:46:48 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 908 ms
+2023-06-10 08:46:48 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:46:48 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:46:48 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:46:48 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:46:48 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:46:48 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:46:48 [restartedMain] INFO  : HikariPool-75 - Starting...
+2023-06-10 08:46:48 [restartedMain] INFO  : HikariPool-75 - Added connection org.postgresql.jdbc.PgConnection@74dde9c0
+2023-06-10 08:46:48 [restartedMain] INFO  : HikariPool-75 - Start completed.
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:46:48 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:46:48 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:46:48 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:46:49 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:46:50 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:46:50 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:46:50 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:46:50 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:46:50 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-10 08:46:50 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:46:50 [restartedMain] INFO  : Started ServiceApplication in 3.07 seconds (process running for 34206.152)
+2023-06-10 08:46:50 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:47:36 [File Watcher] INFO  : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10 08:47:36 [Thread-342] INFO  : Stopping service [Tomcat]
+2023-06-10 08:47:36 [Thread-342] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:47:36 [Thread-342] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:47:36 [Thread-342] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:47:36 [Thread-342] INFO  : HikariPool-75 - Shutdown initiated...
+2023-06-10 08:47:36 [Thread-342] INFO  : HikariPool-75 - Shutdown completed.
+2023-06-10 08:47:36 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:47:36 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:47:37 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:47:37 [restartedMain] INFO  : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:47:37 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:47:37 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:47:37 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:47:37 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:47:37 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 866 ms
+2023-06-10 08:47:37 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:47:37 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:47:37 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:47:37 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:47:37 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:47:37 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:47:37 [restartedMain] INFO  : HikariPool-76 - Starting...
+2023-06-10 08:47:37 [restartedMain] INFO  : HikariPool-76 - Added connection org.postgresql.jdbc.PgConnection@24c67856
+2023-06-10 08:47:37 [restartedMain] INFO  : HikariPool-76 - Start completed.
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:47:37 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:47:37 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:47:37 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:47:38 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:47:39 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:47:39 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:47:39 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:47:39 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:47:39 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-10 08:47:39 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:47:39 [restartedMain] INFO  : Started ServiceApplication in 2.71 seconds (process running for 34254.931)
+2023-06-10 08:47:39 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:48:40 [File Watcher] INFO  : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10 08:48:40 [Thread-346] INFO  : Stopping service [Tomcat]
+2023-06-10 08:48:40 [Thread-346] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:48:40 [Thread-346] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:48:40 [Thread-346] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:48:40 [Thread-346] INFO  : HikariPool-76 - Shutdown initiated...
+2023-06-10 08:48:40 [Thread-346] INFO  : HikariPool-76 - Shutdown completed.
+2023-06-10 08:48:40 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:48:40 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:48:41 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:48:41 [restartedMain] INFO  : Finished Spring Data repository scanning in 71 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:48:41 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:48:41 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:48:41 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:48:41 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:48:41 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 962 ms
+2023-06-10 08:48:41 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:48:41 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:48:41 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:48:41 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:48:41 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:48:41 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:48:41 [restartedMain] INFO  : HikariPool-77 - Starting...
+2023-06-10 08:48:41 [restartedMain] INFO  : HikariPool-77 - Added connection org.postgresql.jdbc.PgConnection@bf2524
+2023-06-10 08:48:41 [restartedMain] INFO  : HikariPool-77 - Start completed.
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:48:41 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:48:41 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:48:42 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:48:42 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:48:42 [restartedMain] WARN  : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+2023-06-10 08:48:42 [restartedMain] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:48:42 [restartedMain] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:48:42 [restartedMain] INFO  : HikariPool-77 - Shutdown initiated...
+2023-06-10 08:48:42 [restartedMain] INFO  : HikariPool-77 - Shutdown completed.
+2023-06-10 08:48:42 [restartedMain] INFO  : Stopping service [Tomcat]
+2023-06-10 08:48:42 [restartedMain] INFO  : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-10 08:48:42 [restartedMain] ERROR : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'groupController' defined in file [D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes\com\service\service\controller\masterdata\GroupController.class]: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:941)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294)
+	at com.service.service.ServiceApplication.main(ServiceApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.service.service.controller.masterdata.GroupController]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	GroupService cannot be resolved to a type
+
+	at com.service.service.controller.masterdata.GroupController.<init>(GroupController.java:32)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 22 common frames omitted
+2023-06-10 08:50:08 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:50:08 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:50:09 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:50:09 [restartedMain] INFO  : Finished Spring Data repository scanning in 56 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:50:09 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:50:09 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:50:09 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:50:09 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:50:09 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 904 ms
+2023-06-10 08:50:09 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:50:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:50:09 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:50:09 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:50:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:50:09 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:50:09 [restartedMain] INFO  : HikariPool-78 - Starting...
+2023-06-10 08:50:09 [restartedMain] INFO  : HikariPool-78 - Added connection org.postgresql.jdbc.PgConnection@186838f5
+2023-06-10 08:50:09 [restartedMain] INFO  : HikariPool-78 - Start completed.
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:50:09 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:50:09 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:50:09 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:50:10 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:50:11 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:50:11 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:50:11 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:50:11 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:50:11 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-10 08:50:11 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:50:11 [restartedMain] INFO  : Started ServiceApplication in 2.871 seconds (process running for 34407.008)
+2023-06-10 08:50:11 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:53:08 [File Watcher] INFO  : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10 08:53:08 [Thread-350] INFO  : Stopping service [Tomcat]
+2023-06-10 08:53:08 [Thread-350] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:53:08 [Thread-350] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:53:08 [Thread-350] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:53:08 [Thread-350] INFO  : HikariPool-78 - Shutdown initiated...
+2023-06-10 08:53:08 [Thread-350] INFO  : HikariPool-78 - Shutdown completed.
+2023-06-10 08:53:08 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:53:08 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:53:08 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:53:08 [restartedMain] INFO  : Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:53:09 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:53:09 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:53:09 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:53:09 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:53:09 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 836 ms
+2023-06-10 08:53:09 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:53:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:53:09 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:53:09 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:53:09 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:53:09 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:53:09 [restartedMain] INFO  : HikariPool-79 - Starting...
+2023-06-10 08:53:09 [restartedMain] INFO  : HikariPool-79 - Added connection org.postgresql.jdbc.PgConnection@27fdf613
+2023-06-10 08:53:09 [restartedMain] INFO  : HikariPool-79 - Start completed.
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:09 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:53:09 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:53:09 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:53:10 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:53:11 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:53:11 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:53:11 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:53:11 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:53:11 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-10 08:53:11 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:53:11 [restartedMain] INFO  : Started ServiceApplication in 3.195 seconds (process running for 34587.317)
+2023-06-10 08:53:11 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:53:54 [File Watcher] INFO  : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10 08:53:54 [Thread-357] INFO  : Stopping service [Tomcat]
+2023-06-10 08:53:54 [Thread-357] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:53:54 [Thread-357] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:53:54 [Thread-357] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:53:54 [Thread-357] INFO  : HikariPool-79 - Shutdown initiated...
+2023-06-10 08:53:54 [Thread-357] INFO  : HikariPool-79 - Shutdown completed.
+2023-06-10 08:53:54 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:53:54 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:53:55 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:53:55 [restartedMain] INFO  : Finished Spring Data repository scanning in 63 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:53:55 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:53:55 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:53:55 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:53:55 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:53:55 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 944 ms
+2023-06-10 08:53:55 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:53:55 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:53:55 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:53:55 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:53:56 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:53:56 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:53:56 [restartedMain] INFO  : HikariPool-80 - Starting...
+2023-06-10 08:53:56 [restartedMain] INFO  : HikariPool-80 - Added connection org.postgresql.jdbc.PgConnection@2c954f7
+2023-06-10 08:53:56 [restartedMain] INFO  : HikariPool-80 - Start completed.
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:53:56 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:53:56 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:53:56 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:53:56 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:53:57 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:53:57 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:53:57 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:53:57 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:53:57 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-10 08:53:57 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:53:57 [restartedMain] INFO  : Started ServiceApplication in 2.786 seconds (process running for 34633.434)
+2023-06-10 08:53:57 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:55:22 [File Watcher] INFO  : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10 08:55:22 [Thread-361] INFO  : Stopping service [Tomcat]
+2023-06-10 08:55:22 [Thread-361] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:55:22 [Thread-361] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:55:22 [Thread-361] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:55:22 [Thread-361] INFO  : HikariPool-80 - Shutdown initiated...
+2023-06-10 08:55:22 [Thread-361] INFO  : HikariPool-80 - Shutdown completed.
+2023-06-10 08:55:22 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:55:22 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:55:23 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:55:23 [restartedMain] INFO  : Finished Spring Data repository scanning in 50 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:55:23 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:55:23 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:55:23 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:55:23 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:55:23 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 877 ms
+2023-06-10 08:55:23 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:55:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:55:23 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:55:23 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:55:23 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:55:23 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:55:23 [restartedMain] INFO  : HikariPool-81 - Starting...
+2023-06-10 08:55:24 [restartedMain] INFO  : HikariPool-81 - Added connection org.postgresql.jdbc.PgConnection@7b8ad710
+2023-06-10 08:55:24 [restartedMain] INFO  : HikariPool-81 - Start completed.
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:55:24 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:55:24 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:55:24 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:55:24 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:55:25 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:55:25 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:55:25 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:55:25 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:55:25 [restartedMain] INFO  : Completed initialization in 0 ms
+2023-06-10 08:55:25 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:55:25 [restartedMain] INFO  : Started ServiceApplication in 2.771 seconds (process running for 34721.255)
+2023-06-10 08:55:25 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:57:31 [File Watcher] INFO  : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10 08:57:31 [Thread-365] INFO  : Stopping service [Tomcat]
+2023-06-10 08:57:31 [Thread-365] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 08:57:31 [Thread-365] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:57:31 [Thread-365] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 08:57:31 [Thread-365] INFO  : HikariPool-81 - Shutdown initiated...
+2023-06-10 08:57:31 [Thread-365] INFO  : HikariPool-81 - Shutdown completed.
+2023-06-10 08:57:32 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 08:57:32 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 08:57:32 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 08:57:32 [restartedMain] INFO  : Finished Spring Data repository scanning in 64 ms. Found 8 JPA repository interfaces.
+2023-06-10 08:57:33 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 08:57:33 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 08:57:33 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 08:57:33 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 08:57:33 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 1060 ms
+2023-06-10 08:57:33 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 08:57:33 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:57:33 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 08:57:33 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 08:57:33 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 08:57:33 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 08:57:33 [restartedMain] INFO  : HikariPool-82 - Starting...
+2023-06-10 08:57:33 [restartedMain] INFO  : HikariPool-82 - Added connection org.postgresql.jdbc.PgConnection@5f151c8c
+2023-06-10 08:57:33 [restartedMain] INFO  : HikariPool-82 - Start completed.
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 08:57:33 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 08:57:33 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 08:57:33 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 08:57:34 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 08:57:35 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 08:57:35 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 08:57:35 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 08:57:35 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 08:57:35 [restartedMain] INFO  : Completed initialization in 1 ms
+2023-06-10 08:57:35 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 08:57:35 [restartedMain] INFO  : Started ServiceApplication in 3.069 seconds (process running for 34851.011)
+2023-06-10 08:57:35 [restartedMain] INFO  : Condition evaluation unchanged
+2023-06-10 08:57:37 [http-nio-1707-exec-2] INFO  : Init duration for springdoc-openapi is: 402 ms
+2023-06-10 08:59:19 [http-nio-1707-exec-2] ERROR : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception [Request processing failed: org.modelmapper.ConfigurationException: ModelMapper configuration errors:
+
+1) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setCreatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setUpdatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2 errors] with root cause
+org.modelmapper.ConfigurationException: ModelMapper configuration errors:
+
+1) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setCreatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getCreated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2) The destination property com.service.service.entity.masterdata.workflow.WorkflowEntity.setUpdatedAt() matches multiple source property hierarchies:
+
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getCreatedAt()
+	com.service.service.dto.masterdata.workflow.WorkflowDTO.getUpdated_by()/com.service.service.entity.masterdata.UserEntity.getUpdatedAt()
+
+2 errors
+	at org.modelmapper.internal.Errors.throwConfigurationExceptionIfErrorsExist(Errors.java:241)
+	at org.modelmapper.internal.ImplicitMappingBuilder.matchDestination(ImplicitMappingBuilder.java:159)
+	at org.modelmapper.internal.ImplicitMappingBuilder.build(ImplicitMappingBuilder.java:90)
+	at org.modelmapper.internal.ImplicitMappingBuilder.build(ImplicitMappingBuilder.java:75)
+	at org.modelmapper.internal.TypeMapStore.getOrCreate(TypeMapStore.java:131)
+	at org.modelmapper.internal.TypeMapStore.getOrCreate(TypeMapStore.java:106)
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:112)
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:71)
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:573)
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:406)
+	at com.service.service.Util.ModdelMapperUtil.convert(ModdelMapperUtil.java:25)
+	at com.service.service.Util.CommonUtil.ConvertModel(CommonUtil.java:43)
+	at com.service.service.controller.masterdata.workflow.WorkflowController.create(WorkflowController.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-10 09:00:09 [File Watcher] INFO  : Restarting due to 24 class path changes (0 additions, 0 deletions, 24 modifications)
+2023-06-10 09:00:09 [Thread-369] INFO  : Stopping service [Tomcat]
+2023-06-10 09:00:09 [Thread-369] INFO  : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-10 09:00:09 [Thread-369] INFO  : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 09:00:09 [Thread-369] INFO  : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-06-10 09:00:09 [Thread-369] INFO  : HikariPool-82 - Shutdown initiated...
+2023-06-10 09:00:09 [Thread-369] INFO  : HikariPool-82 - Shutdown completed.
+2023-06-10 09:00:09 [restartedMain] INFO  : Starting ServiceApplication using Java 18.0.1.1 with PID 19916 (D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service\target\classes started by 62851 in D:\Programming\PERSONAL_PROJECT\BE\SERVICE\service)
+2023-06-10 09:00:09 [restartedMain] INFO  : No active profile set, falling back to 1 default profile: "default"
+2023-06-10 09:00:10 [restartedMain] INFO  : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-10 09:00:10 [restartedMain] INFO  : Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+2023-06-10 09:00:10 [restartedMain] INFO  : Tomcat initialized with port(s): 1707 (http)
+2023-06-10 09:00:10 [restartedMain] INFO  : Starting service [Tomcat]
+2023-06-10 09:00:10 [restartedMain] INFO  : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-10 09:00:10 [restartedMain] INFO  : Initializing Spring embedded WebApplicationContext
+2023-06-10 09:00:10 [restartedMain] INFO  : Root WebApplicationContext: initialization completed in 919 ms
+2023-06-10 09:00:10 [restartedMain] INFO  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-10 09:00:10 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 09:00:10 [restartedMain] INFO  : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-10 09:00:10 [restartedMain] INFO  : HHH035001: Using dialect: org.hibernate.dialect.PostgreSQLDialect, version: 10.0
+2023-06-10 09:00:10 [restartedMain] INFO  : HHH000021: Bytecode provider name : bytebuddy
+2023-06-10 09:00:10 [restartedMain] INFO  : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-10 09:00:10 [restartedMain] INFO  : HikariPool-83 - Starting...
+2023-06-10 09:00:10 [restartedMain] INFO  : HikariPool-83 - Added connection org.postgresql.jdbc.PgConnection@4c4f79b0
+2023-06-10 09:00:10 [restartedMain] INFO  : HikariPool-83 - Start completed.
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow_group" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : relation "m_workflow_group_condition" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "m_group" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "m_roles" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "m_type" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "m_user" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "m_workflow" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "m_workflow_group" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "m_workflow_group_condition" does not exist, skipping
+2023-06-10 09:00:10 [restartedMain] WARN  : SQL Warning Code: 0, SQLState: 00000
+2023-06-10 09:00:10 [restartedMain] WARN  : table "tr_incident" does not exist, skipping
+2023-06-10 09:00:11 [restartedMain] INFO  : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-06-10 09:00:11 [restartedMain] INFO  : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-10 09:00:11 [restartedMain] WARN  : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-10 09:00:12 [restartedMain] INFO  : LiveReload server is running on port 35729
+2023-06-10 09:00:12 [restartedMain] INFO  : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-10 09:00:12 [restartedMain] INFO  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-10 09:00:12 [restartedMain] INFO  : Initializing Servlet 'dispatcherServlet'
+2023-06-10 09:00:12 [restartedMain] INFO  : Completed initialization in 2 ms
+2023-06-10 09:00:12 [restartedMain] INFO  : Tomcat started on port(s): 1707 (http) with context path '/api'
+2023-06-10 09:00:12 [restartedMain] INFO  : Started ServiceApplication in 2.99 seconds (process running for 35008.284)
+2023-06-10 09:00:12 [restartedMain] INFO  : Condition evaluation unchanged

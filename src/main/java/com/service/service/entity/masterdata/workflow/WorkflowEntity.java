@@ -40,8 +40,8 @@ public class WorkflowEntity {
     @Column(name = "sys_id_m_workflow", updatable = false, nullable = false)
     private String id;
 
-    @Column( name = "name_m_type"  ,length = 100 )
-    private String name_m_type;
+    @Column( name = "name_m_workflow"  ,length = 100 )
+    private String name_m_workflow;
 
     @Column( name = "description"  ,columnDefinition = "TEXT")
     private String description;
