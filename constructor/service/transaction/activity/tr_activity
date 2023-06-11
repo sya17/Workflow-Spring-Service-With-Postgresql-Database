@@ -1,0 +1,9 @@
+tr_activity_history
+
+type=String;name=name_m_condition;lenth=100
+type=String;name=transaction_id
+type=String;name=activity_type
+type=String;name=description
+type=String;name=details;columnDefinition=TEXT
+JoinColumn=UserEntity;name=created_by;ManyToOne=Y;
+JoinColumn=UserEntity;name=updated_by;ManyToOne=Y;

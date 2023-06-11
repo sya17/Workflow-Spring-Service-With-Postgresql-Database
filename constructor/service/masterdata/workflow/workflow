@@ -1,0 +1,7 @@
+m_workflow
+
+type=String;name=name_m_workflow;lenth=100
+type=String;name=description;columnDefinition=TEXT;
+JoinColumn=WorkflowGroupEntity;name=sys_id_m_workflow_group;ManyToOne=Y;
+JoinColumn=UserEntity;name=created_by;ManyToOne=Y;
+JoinColumn=UserEntity;name=updated_by;ManyToOne=Y;

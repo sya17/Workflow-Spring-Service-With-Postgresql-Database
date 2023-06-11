@@ -1,0 +1,9 @@
+m_workflow_condition
+
+type=String;name=name_m_condition;lenth=100
+type=String;name=operation;
+type=String;name=field_name;
+type=String;name=value_condition;
+JoinColumn=WorkflowEntity;name=sys_id_m_workflow;ManyToOne=Y;
+JoinColumn=UserEntity;name=created_by;ManyToOne=Y;
+JoinColumn=UserEntity;name=updated_by;ManyToOne=Y;
