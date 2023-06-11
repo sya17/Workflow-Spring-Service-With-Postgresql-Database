@@ -39,10 +39,10 @@ public class OpenAPIConfig {
         License mitLicense = new License().name("MIT License").url("https://choosealicense.com/licenses/mit/");
 
         Info info = new Info()
-                .title("Service Management API")
+                .title("Workflow API engine")
                 .version("1.0")
                 .contact(contact)
-                .description("This API exposes endpoints to manage tutorials.")
+                .description("Prototype API Workflow engine")
                 .termsOfService("https://github.com/sya17")
                 .license(mitLicense);
 
