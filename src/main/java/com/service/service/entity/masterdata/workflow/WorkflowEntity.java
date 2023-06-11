@@ -43,6 +43,9 @@ public class WorkflowEntity {
     @Column( name = "name_m_workflow"  ,length = 100 )
     private String name_m_workflow;
 
+    @Column( name = "tabel_name" )
+    private String tabel_name;
+
     @Column( name = "description"  ,columnDefinition = "TEXT")
     private String description;
 

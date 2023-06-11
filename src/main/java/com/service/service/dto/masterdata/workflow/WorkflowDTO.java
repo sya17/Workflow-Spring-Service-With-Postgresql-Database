@@ -15,6 +15,7 @@ public class WorkflowDTO {
  
      private String id;
      private String name_m_workflow;
+     private String tabel_name;
      private String description;
 
 
