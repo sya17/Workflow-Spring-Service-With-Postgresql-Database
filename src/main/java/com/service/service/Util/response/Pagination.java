@@ -9,20 +9,20 @@ public class Pagination<T> {
 
     private static Pagination instance;
 
-    private Pagination() {
+    public Pagination() {
     }
 
-    private Pagination(String next_page_url, String prev_page_url, int total, int per_page, int curr_page,
-            int last_page, int from, int to) {
-        this.prev_page_url = next_page_url;
-        this.next_page_url = next_page_url;
-        this.total = total;
-        this.per_page = per_page;
-        this.curr_page = curr_page;
-        this.last_page = last_page;
-        this.from = from;
-        this.to = to;
-    }
+    // private Pagination(String next_page_url, String prev_page_url, int total, int per_page, int curr_page,
+    //         int last_page, int from, int to) {
+    //     this.prev_page_url = next_page_url;
+    //     this.next_page_url = next_page_url;
+    //     this.total = total;
+    //     this.per_page = per_page;
+    //     this.curr_page = curr_page;
+    //     this.last_page = last_page;
+    //     this.from = from;
+    //     this.to = to;
+    // }
 
     public static synchronized Pagination getInstance() {
         if (instance == null) {
@@ -33,11 +33,11 @@ public class Pagination<T> {
 
     private String next_page_url;
     private String prev_page_url;
-    private int total;
-    private int per_page;
-    private int curr_page;
-    private int last_page;
-    private int from;
-    private int to;
+    private int current_page;
+    private int current_element;
+    private int total_pages;
+    private int total_element;
+    // private int from;
+    // private int to;
 
 }

@@ -38,6 +38,9 @@ public class WorkflowGroupEntity {
     @Column(name = "name_m_workflow_group", nullable = true, length = 100)
     private String name_workflow_group;
 
+    @Column(name = "sys_id_transaction")
+    private String id_transaction;
+
     @Column(name = "tabel_name")
     private String tabel_name;
 

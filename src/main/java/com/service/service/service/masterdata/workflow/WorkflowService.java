@@ -7,6 +7,8 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import com.service.service.Util.CommonUtil;
 import com.service.service.entity.masterdata.workflow.WorkflowEntity;
@@ -36,6 +38,10 @@ public class WorkflowService extends CommonUtil {
 
     public Optional<WorkflowEntity> getByIdOpt(String id) {
         return !isNullOrEmpty(id) ? repository.findById(id) : null;
+    }
+
+    public Page<WorkflowEntity> getAll(Pageable page) {
+        return repository.findAll(page);
     }
 
     public List<WorkflowEntity> getAll() {

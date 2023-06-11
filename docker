@@ -1,0 +1,15 @@
+# # FROM eclipse-temurin:17-jdk-alpine
+# # VOLUME /tmp
+# # ARG JAR_FILE
+# # COPY ${JAR_FILE} app.jar
+# # ENTRYPOINT ["java","-jar","/app.jar"]
+
+# # FROM openjdk:11
+# # ADD target/service.jar service.jar
+# # EXPOSE 8080
+# # ENTRYPOINT ["java", "-jar", "service.jar"]
+
+# FROM adoptopenjdk:11-jre-hotspot
+# ARG JAR_FILE=*.jar
+# COPY ${JAR_FILE} application.jar
+# ENTRYPOINT ["java", "-jar", "application.jar"]

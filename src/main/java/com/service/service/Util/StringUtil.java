@@ -15,4 +15,8 @@ public class StringUtil {
     public boolean isNullOrEmpty(String value) {
         return value == null || value.equalsIgnoreCase("");
     }
+    
+    public String makeStringStripIfNull(String val) {
+        return !isNullOrEmpty(val) ? val : "-";
+    }
 }

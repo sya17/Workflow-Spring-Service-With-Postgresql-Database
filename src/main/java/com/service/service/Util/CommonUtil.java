@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.validation.FieldError;
 
 import com.service.service.Util.response.ErrorResponse;
@@ -11,6 +12,8 @@ import com.service.service.Util.response.Pagination;
 import com.service.service.Util.response.ResponseUtils;
 import com.service.service.constant.ResponRequestConstant;
 import com.service.service.entity.masterdata.workflow.WorkflowGroupEntity;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 public class CommonUtil {
 
@@ -54,11 +57,29 @@ public class CommonUtil {
 
     }
 
+    public String getPathUri(HttpServletRequest request, String defaultStr) {
+        if (request != null) {
+            return request.getRequestURL().toString();
+        } else {
+            return defaultStr;
+        }
+    }
+
     public ResponseUtils setGeneralResponse(
             Object data,
             String path,
             String method) {
-        return setGeneralResponse(data, path, method, null, null);
+        return setGeneralResponse(data, path, method, null, null, null, null, null);
+    }
+
+    public ResponseUtils setGeneralResponse(
+            Object data,
+            String path,
+            String method,
+            HttpServletRequest request,
+            Integer perPage,
+            Page page) {
+        return setGeneralResponse(data, path, method, null, null, request, perPage, page);
     }
 
     public ResponseUtils setGeneralResponse(
@@ -66,7 +87,10 @@ public class CommonUtil {
             String path,
             String method,
             String msg,
-            Object errMsg) {
+            Object errMsg,
+            HttpServletRequest request,
+            Integer perPage,
+            Page page) {
         ResponseUtils resUtils = new ResponseUtils();
         resUtils.setService("/" + path);
         if (!isNullOrEmpty(method)) {
@@ -98,15 +122,41 @@ public class CommonUtil {
             resUtils.setErr_message(errMsg);
         }
 
-        resUtils.setData(data);
+        if (page != null) {
+            resUtils.setPage(setPage(page, getPathUri(request, path), perPage));
+            resUtils.setData(page.getContent());
+        } else {
+            resUtils.setData(data);
+        }
         return resUtils;
     }
 
-    public Pagination setPage(ResponseUtils responseUtils) {
-        Pagination.getInstance().setNext_page_url("NEXT");
-        Pagination.getInstance().setPrev_page_url("PREV");
-        responseUtils.setPage(Pagination.getInstance());
-        return Pagination.getInstance();
+    public Pagination setPage(Page pagination, String endPoint) {
+        return setPage(pagination, endPoint, null);
+    }
+
+    public Pagination setPage(Page pagination, String endPoint, Integer perPage) {
+        Pagination paginationResponse = new Pagination<>();
+        if (pagination != null) {
+            String nextPage = (pagination.getNumber() + 1) < pagination.getTotalPages()
+                    ? (endPoint + "?page=" + (pagination.getNumber() + 2) + "&page_size="
+                            + (perPage != null ? perPage : PaginationUtil.getInstance().perPageG))
+                    : null;
+            String previous_page = (pagination.getNumber() + 1) > 1
+                    ? (endPoint + "?page=" + (pagination.getNumber()) + "&page_size="
+                            + (perPage != null ? perPage : PaginationUtil.getInstance().perPageG))
+                    : null;
+            paginationResponse.setNext_page_url(StringUtil.getInstance().makeStringStripIfNull(nextPage));
+            paginationResponse.setPrev_page_url(StringUtil.getInstance().makeStringStripIfNull(previous_page));
+            paginationResponse.setCurrent_page(pagination.getNumber() + 1);
+            paginationResponse.setCurrent_element(pagination.getNumberOfElements());
+            paginationResponse.setTotal_pages(pagination.getTotalPages());
+            paginationResponse.setTotal_element((int) pagination.getTotalElements());
+        } else {
+            paginationResponse.setNext_page_url("-");
+            paginationResponse.setPrev_page_url("-");
+        }
+        return paginationResponse;
     }
 
 }

@@ -54,7 +54,10 @@ public class ValidationException {
                                 path,
                                 null,
                                 "There is an Error",
-                                listError));
+                                listError,
+                                null,
+                                null,
+                                null));
     }
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
@@ -73,6 +76,10 @@ public class ValidationException {
                                 null,
                                 path,
                                 null,
-                                "There is an Error", errorMessage));
+                                "There is an Error",
+                                errorMessage,
+                                null,
+                                null, 
+                                null));
     }
 }

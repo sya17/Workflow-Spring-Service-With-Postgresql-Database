@@ -68,7 +68,6 @@ public class WorkflowGroupConditionController extends CommonUtil {
                 service.getAll(),
                 path,
                 ResponRequestConstant.MethodConstant.GET);
-        setPage(res);
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .contentType(MediaType.APPLICATION_JSON)
@@ -85,7 +84,6 @@ public class WorkflowGroupConditionController extends CommonUtil {
                                         id + " Not Found"))),
                 path,
                 ResponRequestConstant.MethodConstant.GET);
-        setPage(res);
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .contentType(MediaType.APPLICATION_JSON)

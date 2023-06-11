@@ -28,7 +28,7 @@ import com.service.service.entity.masterdata.UserEntity;
 @Getter // Untuk Get Paramater
 @Data // Untuk Memberikan Identitas Data yang mengakses ke Database
 @Entity // Untuk Memberikan Identitas Data yang mengakses ke Database
-@Table(name = "m_workflowcondition")
+@Table(name = "m_workflow_condition")
 @EntityListeners(WorkflowConditionEntityListener.class) 
  
 public class WorkflowConditionEntity { 
