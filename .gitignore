@@ -34,6 +34,11 @@ build/
 
 
 ## LOGS
+./logs
 /LOGS
-/logs
+/logs/
+/logs/application.log
 /logs/*
+*/[Ll]ogs/*
+[Ll]ogs/
+logs/
