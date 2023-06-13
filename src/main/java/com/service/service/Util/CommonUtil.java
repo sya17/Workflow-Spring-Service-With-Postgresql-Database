@@ -5,6 +5,7 @@ import java.util.List;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.validation.FieldError;
 
 import com.service.service.Util.response.ErrorResponse;
@@ -159,4 +160,7 @@ public class CommonUtil {
         return paginationResponse;
     }
 
+    public void workflow(JpaRepository repo, String tableName) {
+        WorkflowUtil.getInstance().startWorkflow(repo, tableName);
+    }
 }
