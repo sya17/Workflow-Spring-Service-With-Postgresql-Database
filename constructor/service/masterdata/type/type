@@ -1,0 +1,6 @@
+m_type
+
+type=String;name=name_m_type
+type=String;name=description;columnDefinition=TEXT;
+JoinColumn=UserEntity;name=created_by;ManyToOne=Y;
+JoinColumn=UserEntity;name=updated_by;ManyToOne=Y;
