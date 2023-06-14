@@ -45,7 +45,7 @@ public class CityController extends CommonUtil {
         CityEntity entity = service.save(ConvertModel(dto, CityEntity.class));
         CityDTO res = ConvertModel(entity, CityDTO.class);
         return ResponseEntity
-                .status(HttpStatus.OK)
+                .status(HttpStatus.CREATED)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(
                         setGeneralResponse(

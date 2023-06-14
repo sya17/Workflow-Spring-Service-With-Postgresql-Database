@@ -41,7 +41,7 @@ public class UserController extends CommonUtil {
         UserEntity usermodel = service.save(ConvertModel(user, UserEntity.class));
         UserDTO userRes = ConvertModel(usermodel, UserDTO.class);
         return ResponseEntity
-                .status(HttpStatus.OK)
+                .status(HttpStatus.CREATED)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(
                         setGeneralResponse(
@@ -55,7 +55,7 @@ public class UserController extends CommonUtil {
         UserEntity usermodel = service.update(user.getId(), ConvertModel(user, UserEntity.class));
         Object res = (usermodel == null ? (user.getId() + " Not Found") : ConvertModel(usermodel, UserDTO.class));
         return ResponseEntity
-                .status(HttpStatus.OK)
+                .status(HttpStatus.CREATED)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(
                         setGeneralResponse(

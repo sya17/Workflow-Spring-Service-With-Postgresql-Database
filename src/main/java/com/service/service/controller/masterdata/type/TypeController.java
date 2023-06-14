@@ -45,7 +45,7 @@ public class TypeController extends CommonUtil {
         TypeEntity entity = service.save(ConvertModel(dto, TypeEntity.class));
         TypeDTO res = ConvertModel(entity, TypeDTO.class);
         return ResponseEntity
-                .status(HttpStatus.OK)
+                .status(HttpStatus.CREATED)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(
                         setGeneralResponse(

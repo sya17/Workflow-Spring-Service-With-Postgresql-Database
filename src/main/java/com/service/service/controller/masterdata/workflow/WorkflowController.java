@@ -45,7 +45,7 @@ public class WorkflowController extends CommonUtil {
         WorkflowEntity entity = service.save(ConvertModel(dto, WorkflowEntity.class));
         WorkflowDTO res = ConvertModel(entity, WorkflowDTO.class);
         return ResponseEntity
-                .status(HttpStatus.OK)
+                .status(HttpStatus.CREATED)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(
                         setGeneralResponse(

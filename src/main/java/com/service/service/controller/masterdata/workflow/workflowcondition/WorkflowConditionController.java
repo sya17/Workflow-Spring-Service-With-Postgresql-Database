@@ -45,7 +45,7 @@ public class WorkflowConditionController extends CommonUtil {
         WorkflowConditionEntity entity = service.save(ConvertModel(dto, WorkflowConditionEntity.class));
         WorkflowConditionDTO res = ConvertModel(entity, WorkflowConditionDTO.class);
         return ResponseEntity
-                .status(HttpStatus.OK)
+                .status(HttpStatus.CREATED)
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(
                         setGeneralResponse(
