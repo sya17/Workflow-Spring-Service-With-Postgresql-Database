@@ -1,0 +1,8 @@
+r_user
+
+type=String;name=name_r_user
+type=String;name=username
+type=String;name=nama_depan
+type=String;name=nama_belakang
+type=String;name=alamat;columnDefinition=TEXT;
+type=String;name=departement_id
